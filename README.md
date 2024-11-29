@@ -1,2 +1,2 @@
 # PintiaTour
-Modelo app móvil de guía turística
+Modelo app móvil de guía turística para el complejo de estudios Vacceos de Pintia
