@@ -77,5 +77,4 @@ Este esfuerzo refleja nuestro compromiso de hacer el lugar más conocido, desper
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/pintia-tour.git
-   cd pintia-tour
+   git clone https://github.com/carlgar512/PintiaTour.git
