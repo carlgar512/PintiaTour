@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- IDIOMA ESPANOL -->
+
+    <!-- Textos comunes a varias las pantallas -->
+    <string name="texto_universidad_valladolid">Universidad de Valladolid</string>
+    <string name="texto_centro_federico_wattenberg">Centro de estudios Vacceos\nFederico Wattenberg</string>
+    <string name="texto_boton_regresar">Volver</string>
+    <string name="texto_boton_siguiente">Siguiente</string>
+    <string name="texto_select_visit_visita_personalizada">Visita personalizada</string>
+    <string name="minutos"> min</string>
+    <string name="horas"> hora</string>
+    <string name="app_name">Pintia Tour</string>
+    <string name="texto_boton_arquitectura_visita_personalizada">Arquitectura</string>
+    <string name="texto_boton_funerario_visita_personalizada">Funerario</string>
+    <string name="texto_boton_militar_visita_personalizada">Militar</string>
+    <string name="texto_boton_costumbres_visita_personalizada">Costumbres</string>
+    <string name="texto_boton_curiosidades_visita_personalizada">Curiosidades</string>
+
+
+    <!--Texto pantalla seleccionar tipo de visita o contacto -->
+    <string name="texto_loading_app_pintia_tour">Pintia Tour</string>
+    <string name="texto_select_visit_idioma">Idiomas</string>
+    <string name="texto_select_visit_visita_express">Visita express 1 hora</string>
+    <string name="texto_select_visit_contacto">Contacto</string>
+
+
+
+    <!--Texto pantalla de contacto -->
+    <string name="texto_ubicacion_pintia">Aqui nos encontramos</string>
+    <string name="texto_contacto_mas_info">Para más información y visitas guiadas llame a:</string>
+    <string name="texto_contacto_telefono">983 88 12 40</string>
+    <string name="web_pintia">https://www.pintiavaccea.es</string>
+    <string name="texto_contacto_web_pintia">Visita nuestra web!</string>
+
+    <!-- Texto pantalla de visita express -->
+    <string name="texto_visita_express">Visita express</string>
+    <string name="texto_consejo_girar_movil">Por favor, sitúe su teléfono móvil de forma horizontal para comenzar con la visita</string>
+
+
+    <!-- Texto pantalla de visita personalizada -->
+    <string name="texto_duracion_visita_personalizada">Duracion</string>
+    <string name="texto_minutos_duracion_visita_personalizada">10</string>
+    <string name="texto_tipo_visita_personalizada">Tipo</string>
+    <string name="texto_temas_visita_personalizada">Elija uno o varios temas de visita:</string>
+    <string name="texto_temas_requeridos">Elija al menos un tema</string>
+
+
+    <!-- Texto pantalla del punto inicial de la visita -->
+    <string name="texto_inicial_punto_inicial">Bienvenido a Pintia, mi nombre es Ambatus. Es un honor recibirle hoy en esta tierra que guarda las huellas de mis ancestros y así podrá descubrir el alma de mi pueblo.\n\nPintia es mucho más que un yacimiento, es el testimonio de un pueblo que valoraba el coraje, la vida comunitaria y la conexión con la naturaleza.</string>
+
+    <!-- Texto pantalla - mapa de cada punto -->
+    <string name="texto_dirijase_punto_punto_siguiente_mapa">Diríjase al punto señalado en el mapa, pulse la imagen para ir a Google Maps</string>
+
+    <!-- Texto pantalla del siguiente punto - contenido -->
+
+    <string name="texto_principal_arquitectura_punto_siguiente_contenido_0">Las viviendas vacceas, de entre 30 y 100 metros cuadrados, variaban según su función y estatus. Las pequeñas incluían vestíbulo, cocina y almacén, mientras que las más grandes podían tener hasta siete habitaciones. Construidas con adobe y tapial, sus muros se recubrían de barro, a veces pintados en blanco y rojo, reflejando una estética funcional y decorativa.</string>
+    <string name="texto_principal_arquitectura_punto_siguiente_contenido_1">Las casas se levantaban sobre durmientes de madera encajados en zanjas. Los techos se construían con vigas vegetales recubiertas de barro, mientras que los suelos empleaban arcilla mezclada con cerámica o cantos rodados para garantizar resistencia. Este ingenio constructivo destacaba por su adaptación a los recursos locales y las necesidades climáticas.</string>
+    <string name="texto_principal_arquitectura_punto_siguiente_contenido_2">Dentro de los hogares, los vacceos disponían de ingeniosos sistemas de almacenamiento, como silos excavados en el suelo o grandes vasijas subterráneas. Estas soluciones no solo optimizaban el uso del espacio, sino que preservaban alimentos y bienes esenciales para la vida cotidiana.</string>
+
+    <string name="texto_principal_funerario_punto_siguiente_contenido_0">La cremación era una práctica funeraria común entre los vacceos. Tras reducir el cuerpo a cenizas, estas se depositaban en urnas cinerarias junto a ajuares y ofrendas. Este rito simbolizaba el acompañamiento del difunto en su viaje hacia el más allá, marcando la tumba con una estela identificativa.</string>
+    <string name="texto_principal_funerario_punto_siguiente_contenido_1">Además de la cremación, los vacceos practicaban la inhumación y la exposición a los buitres. Este último rito reflejaba una profunda conexión simbólica, ya que el buitre era considerado un portador sagrado que guiaba las almas hacia la otra vida.</string>
+    <string name="texto_principal_funerario_punto_siguiente_contenido_2">Las tumbas vacceas incluían ajuares cuidadosamente seleccionados, como sonajas, armas y objetos personales, junto a alimentos y otros bienes. Estas ofrendas reflejaban el estatus social del difunto y aseguraban su bienestar en el más allá.</string>
+
+    <string name="texto_principal_militar_punto_siguiente_contenido_0">En la sociedad vaccea, el valor como guerrero no solo se heredaba, sino que se demostraba mediante actos de honor y combate cuerpo a cuerpo. Las armas, cargadas de simbolismo, acompañaban al guerrero tanto en la vida como en la muerte.</string>
+    <string name="texto_principal_militar_punto_siguiente_contenido_1">Los vacceos fabricaban sus armas a partir de hierro, un material de gran valor. Estos objetos no solo cumplían una función bélica, sino que también eran símbolos de poder y prestigio dentro de la jerarquía social.</string>
+    <string name="texto_principal_militar_punto_siguiente_contenido_2">La oligarquía guerrera controlaba los recursos y las alianzas sociales mediante la redistribución de bienes, como carne y vino, y actividades exclusivas que reforzaban su autoridad y prestigio.</string>
+
+    <string name="texto_principal_costumbres_punto_siguiente_contenido_0">Los vacceos obtenían metales preciosos como hierro, oro y bronce mediante el trueque de excedentes agrícolas. Este sistema económico reflejaba su ingenio para gestionar recursos y fortalecer relaciones comerciales.</string>
+    <string name="texto_principal_costumbres_punto_siguiente_contenido_1">Actividades como el consumo de carne y vino eran privilegio de la clase dirigente, quienes empleaban estas prácticas para reafirmar su posición de poder y estrechar alianzas con las clases dependientes.</string>
+    <string name="texto_principal_costumbres_punto_siguiente_contenido_2">La sociedad vaccea se regía por valores aristocráticos, donde el honor y el simbolismo de los bienes materiales, como armas y joyas, jugaban un papel central en la identidad individual y colectiva.</string>
+    <string name="texto_principal_costumbres_punto_siguiente_contenido_3">La cerámica refleja la habilidad y creatividad Vaccea. En el barrio de Carralaceña, cercano al Duero, las piezas eran elaboradas con torno y cocidas en grandes hornos. Estas obras cumplían funciones prácticas y simbólicas, siendo decoradas con técnicas diversas como incisiones, estampados y modelados.</string>
+
+    <string name="texto_principal_curiosidades_punto_siguiente_contenido_0">Los tintinábulos, decorados y colgantes, se usaban como amuletos protectores en puertas y cunas. Su sonido era considerado un elemento protector contra el mal.\n\nEn ocasiones especiales, los guerreros fallecidos eran ofrecidos a los buitres, elevandolos al cielo y simbolizando el regreso del alma al cosmos, un aspecto espiritual profundamente ligado a la naturaleza y al entorno.</string>
+    <string name="texto_principal_curiosidades_punto_siguiente_contenido_1">Los vacceos veían en el lobo un guardián protector y en el buitre un guía espiritual hacia el más allá. Estos animales simbolizaban la conexión entre lo terrenal y lo trascendental.\nEn el Samhain celta se honra a los antepasados vacceos y romanos que descansan allí, respetando su memoria y conectando a los visitantes con su legado cultural.</string>
+    <string name="texto_principal_curiosidades_punto_siguiente_contenido_2">Encontradas en tumbas junto a ofrendas de carne, estas cajitas con forma de animales podrían haber sido utilizadas como saleros o especieros, reflejando la creatividad y funcionalidad en los objetos funerarios.\n\nUna figura contemporánea,"El Señor de la Bellota", se erige en Pintia como guardián simbólico. Fue creada para desalentar el saqueo y fomentar el respeto por el patrimonio arqueológico.</string>
+
+    <!-- Texto pantalla del siguiente punto - cuestionario -->
+
+    <!-- preguntas arquitectura -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_0">¿Qué empleaban los Vacceos para cimentar sus hogares?</string>
+    <string name="texto_respuesta_uno_arquitectura_0">Durmientes y tocones de madera</string>
+    <string name="texto_respuesta_dos_arquitectura_0">Soleras de hormigón</string>
+    <string name="texto_respuesta_tres_arquitectura_0">Pilotes de hormigón</string>
+    <string name="texto_respuesta_cuatro_arquitectura_0">Mezcla entre madera, barro y metales</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_0">Cimentación tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_0">Cimentación tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_0">Cimentación tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_0">Cimentación tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_1">¿Que secciones estaban presentes en sus hogares?</string>
+    <string name="texto_respuesta_uno_arquitectura_1">Salón, cocina y patio</string>
+    <string name="texto_respuesta_dos_arquitectura_1">Vestíbulo, cocina y almacén</string>
+    <string name="texto_respuesta_tres_arquitectura_1">Salón, cocina y baños</string>
+    <string name="texto_respuesta_cuatro_arquitectura_1">Vestíbulo, cocina, baños y almacen</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_1">Hogar tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_1">Hogar tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_1">Hogar tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_1">Hogar tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_2">¿Cómo era el sistema de almacenamiento común en las viviendas vacceas?</string>
+    <string name="texto_respuesta_uno_arquitectura_2">Silos excavados en el suelo, enlucidos por dentro o con una vasija en su interior</string>
+    <string name="texto_respuesta_dos_arquitectura_2">Estantes de piedra adosados a las paredes de adobe</string>
+    <string name="texto_respuesta_tres_arquitectura_2">Cajas de madera enterradas bajo el suelo de la casa</string>
+    <string name="texto_respuesta_cuatro_arquitectura_2">Frascos de barro colgados en el techo de la vivienda</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_2">Hogar tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_2">Hogar tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_2">Hogar tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_2">Hogar tipo D[Fotografía]</string>
+
+
+    <!-- preguntas funerario -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_0">¿Que rituales de enterramiento empleaban los Vacceos?</string>
+    <string name="texto_respuesta_uno_funerario_0">Cremación, lapidación y encajonamiento</string>
+    <string name="texto_respuesta_dos_funerario_0">Cremación y esparcimiento de ceniza</string>
+    <string name="texto_respuesta_tres_funerario_0">Cremación Inhumación y exposición a buitres</string>
+    <string name="texto_respuesta_cuatro_funerario_0">Cremación, entierro en ataúd de piedra y momificación</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_0">Entierro tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_0">Entierro tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_0">Entierro tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_0">Entierro tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_1">¿Que lugar fue dedicado a los enterramientos?</string>
+    <string name="texto_respuesta_uno_funerario_1">Carralaceña</string>
+    <string name="texto_respuesta_dos_funerario_1">Los Cenizales</string>
+    <string name="texto_respuesta_tres_funerario_1">Necropolis de Las Ruedas</string>
+    <string name="texto_respuesta_cuatro_funerario_1">Lugares personales de cada familia</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_1">Entierro tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_1">Entierro tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_1">Entierro tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_1">Entierro tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_2">¿Qué papel tenía el buitre en la simbología vaccea?</string>
+    <string name="texto_respuesta_uno_funerario_2">Era un ave sagrada que llevaba el alma de los guerreros caídos hacia el más allá</string>
+    <string name="texto_respuesta_dos_funerario_2">Era un símbolo de fertilidad y prosperidad en los cultivos</string>
+    <string name="texto_respuesta_tres_funerario_2">Representaba el renacimiento y la purificación del alma</string>
+    <string name="texto_respuesta_cuatro_funerario_2">Era una representación de la longevidad y la protección del hogar</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_2">Entierro tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_2">Entierro tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_2">Entierro tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_2">Entierro tipo D[Fotografía]</string>
+
+    <!-- preguntas militar -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_0">¿Como se forjaba un guerrero Vacceo?</string>
+    <string name="texto_respuesta_uno_militar_0">Prestigio familiar heredado</string>
+    <string name="texto_respuesta_dos_militar_0">Por aspecto post-nacimiento</string>
+    <string name="texto_respuesta_tres_militar_0">Por aptitudes fisicas y honor ganado en combates cuerpo a cuerpo</string>
+    <string name="texto_respuesta_cuatro_militar_0">Por su bondad y trabajo comunitario</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_0">Militar tipo A[Fotografía].</string>
+    <string name="texto_referencia_respuesta_dos_militar_0">Militar tipo B[Fotografía].</string>
+    <string name="texto_referencia_respuesta_tres_militar_0">Militar tipo C[Fotografía].</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_0">Militar tipo D[Fotografía].</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_1">¿Que emplearon los Romanos desde el punto de asedio a Pintia?</string>
+    <string name="texto_respuesta_uno_militar_1">Catapulta</string>
+    <string name="texto_respuesta_dos_militar_1">Ariete</string>
+    <string name="texto_respuesta_tres_militar_1">Lanzas, jabalinas y espadas</string>
+    <string name="texto_respuesta_cuatro_militar_1">Arcos, flechas y dardos</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_1">Militar tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_militar_1">Militar tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_militar_1">Militar tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_1">Militar tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_2">¿Por qué motivo acompañaban las armas a los guerreros vacceos en su vida en el más allá?</string>
+    <string name="texto_respuesta_uno_militar_2">Porque representaban su valor y honor en combate</string>
+    <string name="texto_respuesta_dos_militar_2">Para garantizar su protección contra enemigos sobrenaturales</string>
+    <string name="texto_respuesta_tres_militar_2">Como muestra de riqueza para impresionar a sus ancestros</string>
+    <string name="texto_respuesta_cuatro_militar_2">Para usarlas en rituales sagrados con sus dioses</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_2">Militar tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_militar_2">Militar tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_militar_2">Militar tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_2">Militar tipo D[Fotografía]</string>
+
+    <!-- preguntas costumbres -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_0">En base a los objetos hallados ¿En que costumbre destacaban los Vacceos?</string>
+    <string name="texto_respuesta_uno_costumbres_0">Alfarería y Ornamentación de piezas</string>
+    <string name="texto_respuesta_dos_costumbres_0">Fundición y empleo de metales</string>
+    <string name="texto_respuesta_tres_costumbres_0">Religiosidad</string>
+    <string name="texto_respuesta_cuatro_costumbres_0">Tallado y esculpido de piezas</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_0">Costumbres tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_0">Costumbres tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_0">Costumbres tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_0">Costumbres tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_1">¿Que útiles de barro han sido hallados en Pintia?</string>
+    <string name="texto_respuesta_uno_costumbres_1">Jarrones, sonajas y vasijas, entre otros</string>
+    <string name="texto_respuesta_dos_costumbres_1">Tenedores y utensilios de cocina</string>
+    <string name="texto_respuesta_tres_costumbres_1">Estatuas familiares</string>
+    <string name="texto_respuesta_cuatro_costumbres_1">Armas de cerámica</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_1">Costumbres tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_1">Costumbres tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_1">Costumbres tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_1">Costumbres tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_2">¿Qué interpretación se le da a las sonajas encontradas en tumbas infantiles?</string>
+    <string name="texto_respuesta_uno_costumbres_2">Se cree que eran amuletos protectores creados durante el embarazo y el parto</string>
+    <string name="texto_respuesta_dos_costumbres_2">Eran instrumentos musicales para ceremonias comunitarias</string>
+    <string name="texto_respuesta_tres_costumbres_2">Se usaban para medir el tiempo mediante el sonido</string>
+    <string name="texto_respuesta_cuatro_costumbres_2">Funcionaban como recipientes de agua para los ritos funerarios</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_2">Costumbres tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_2">Costumbres tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_2">Costumbres tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_2">Costumbres tipo D[Fotografía]</string>
+
+    <!-- preguntas curiosidades -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_0">Los Vacceos carecían de algo muy importante en la actualidad ¿De que se trata?</string>
+    <string name="texto_respuesta_uno_curiosidades_0">No conocían la escritura</string>
+    <string name="texto_respuesta_dos_curiosidades_0">No conocían el tallado en madera</string>
+    <string name="texto_respuesta_tres_curiosidades_0">No conocían el culto a los antepasados</string>
+    <string name="texto_respuesta_cuatro_curiosidades_0">No conocían la religión</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_0">Curiosidades tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_0">Curiosidades tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_0">Curiosidades tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_0">Curiosidades tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_1">¿Cuál era una práctica agrícola distintiva de los vacceos?</string>
+    <string name="texto_respuesta_uno_curiosidades_1">Cultivaban en comunidad y distribuían las cosechas equitativamente</string>
+    <string name="texto_respuesta_dos_curiosidades_1">Practicaban la agricultura individual y comercializaban solo con los romanos</string>
+    <string name="texto_respuesta_tres_curiosidades_1">Solamente se dedicaban al pastoreo y recolección de frutos silvestres</string>
+    <string name="texto_respuesta_cuatro_curiosidades_1">No tenían prácticas agrícolas, eran nómadas cazadores-recolectores</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_1">Curiosidades tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_1">Curiosidades tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_1">Curiosidades tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_1">Curiosidades tipo D[Fotografía]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_2">¿Qué función tenía el vino en la sociedad vaccea?</string>
+    <string name="texto_respuesta_uno_curiosidades_2">Era una bebida de consumo exclusivo de la oligarquía guerrera</string>
+    <string name="texto_respuesta_dos_curiosidades_2">Era una bebida utilizada solo en las ceremonias religiosas</string>
+    <string name="texto_respuesta_tres_curiosidades_2">El vino se consumía únicamente en rituales funerarios</string>
+    <string name="texto_respuesta_cuatro_curiosidades_2">Era usado principalmente en el campo para alimentar animales</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_2">Curiosidades tipo A[Fotografía]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_2">Curiosidades tipo B[Fotografía]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_2">Curiosidades tipo C[Fotografía]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_2">Curiosidades tipo D[Fotografía]</string>
+
+
+    <!-- Pantalla fin de visita -->
+    <string name="texto_fin_visita">Gracias por acompañarme en este recorrido. Espero que hayas disfrutado de la experiencia y descubierto la riqueza cultural Vaccea. \n \n \n¡Te espero en futuras visitas!</string>
+    <string name="texto_boton_fin_visita">Fin</string>
+
+    <!-- FIN IDIOMA ESPANOL -->
+
+
+
+    <!-- IDIOMA INGLES -->
+
+    <!-- Textos comunes a varias las pantallas -->
+    <string name="texto_boton_regresar_eng">Return</string>
+    <string name="texto_boton_siguiente_eng">Next</string>
+    <string name="texto_select_visit_visita_personalizada_eng">Custom Visit</string>
+    <string name="texto_boton_arquitectura_visita_personalizada_eng">Architecture</string>
+    <string name="texto_boton_funerario_visita_personalizada_eng">Funerary</string>
+    <string name="texto_boton_militar_visita_personalizada_eng">Military</string>
+    <string name="texto_boton_costumbres_visita_personalizada_eng">Traditions</string>
+    <string name="texto_boton_curiosidades_visita_personalizada_eng">Curiosities</string>
+
+
+    <!--Texto pantalla seleccionar tipo de visita o contacto -->
+    <string name="texto_select_visit_idioma_eng">Select Language</string>
+    <string name="texto_select_visit_visita_express_eng">Express visit 1 hour</string>
+    <string name="texto_select_visit_contacto_eng">Contact</string>
+
+
+    <!--Texto pantalla de contacto -->
+    <string name="texto_ubicacion_pintia_eng">You can find us here</string>
+    <string name="texto_contacto_mas_info_eng">For more info and guided visits call or reach us:</string>
+    <string name="texto_contacto_web_pintia_eng">Visit our thematic website!</string>
+
+    <!-- Texto pantalla de visita express -->
+    <string name="texto_visita_express_eng">Express Visit</string>
+    <string name="texto_consejo_girar_movil_eng">Please, flip your phone to start the visit</string>
+
+    <!-- Texto pantalla de visita personalizada -->
+    <string name="texto_duracion_visita_personalizada_eng">Duration</string>
+    <string name="texto_tipo_visita_personalizada_eng">Type</string>
+    <string name="texto_temas_visita_personalizada_eng">Pick one or more visit themes:</string>
+    <string name="texto_temas_requeridos_eng">Pick at least one theme</string>
+
+    <!-- Texto pantalla del punto inicial de la visita -->
+    <string name="texto_inicial_punto_inicial_eng">Welcome to Pintia, my name is Ambatus. It is an honour to welcome you today to this land that bears the traces of my ancestors, so that you can discover the soul of my people. \n\nPintia is much more than a archaeological site, it is the testimony of a people who valued courage, community life and connection with nature.</string>
+
+    <!-- Texto pantalla - mapa de cada punto -->
+    <string name="texto_dirijase_punto_punto_siguiente_mapa_eng">Go to the point indicated on the map, press the image to go Google Maps</string>
+
+    <!-- Texto pantalla del siguiente punto - contenido -->
+
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_0_eng">Vaccean dwellings, ranging in size from 30 to 100 square metres, varied according to function and status. The smaller ones included an entrance hall, kitchen and storeroom, while the larger ones could have up to seven rooms. Built of adobe and rammed earth, their walls were covered with mud, sometimes painted white and red, reflecting a functional and decorative aesthetic.</string>
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_1_eng">The houses were built on wooden sleepers embedded in ditches. The roofs were made of wooden beams covered with mud, while the floors were made of clay mixed with ceramic or pebbles to ensure strength. This constructive ingenuity was notable for its adaptation to local resources and climatic needs.</string>
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_2_eng">Inside their homes, the Vacceans had ingenious storage systems, such as silos dug out of the ground or large underground vessels. These solutions not only optimised the use of space, but also preserved foodstuffs and essential goods for daily life.</string>
+
+ <string name="texto_principal_funerario_punto_siguiente_contenido_0_eng">Cremation was a common burial practice among the Vacceans. After reducing the body to ashes, these were placed in cinerary urns together with grave goods and offerings. This rite symbolised the accompaniment of the deceased on his journey to the afterlife, marking the grave with an identifying stele.</string>
+ <string name="texto_principal_funerario_punto_siguiente_contenido_1_eng">In addition to cremation, the Vacceans practised burial and exposure to vultures. The latter rite reflected a deep symbolic connection, as the vulture was considered a sacred carrier that guided souls to the afterlife.</string>
+ <string name="texto_principal_funerario_punto_siguiente_contenido_2_eng">Vaccean tombs included carefully selected grave goods, such as rattles, weapons and personal objects, along with food and other goods. These offerings reflected the social status of the deceased and ensured their well-being in the afterlife.</string>
+
+ <string name="texto_principal_militar_punto_siguiente_contenido_0_eng">In Vaccean society, bravery as a warrior was not only inherited, but demonstrated through acts of honour and hand-to-hand combat. Weapons, laden with symbolism, accompanied the warrior both in life and in death.</string>
+ <string name="texto_principal_militar_punto_siguiente_contenido_1_eng">The Vacceans made their weapons from iron, a material of great value. These objects not only served a warlike function, but were also symbols of power and prestige within the social hierarchy.</string>
+ <string name="texto_principal_militar_punto_siguiente_contenido_2_eng">The warrior oligarchy controlled resources and social alliances through the redistribution of goods, such as meat and wine, and exclusive activities that reinforced their authority and prestige.</string>
+
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_0_eng">The Vacceans obtained precious metals such as iron, gold and bronze by bartering agricultural surpluses. This economic system reflected their ingenuity in managing resources and strengthening trade relations.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_1_eng">Activities such as the consumption of meat and wine were the privilege of the ruling class, who used these practices to assert their position of power and strengthen alliances with the dependent classes.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_2_eng">Vaccean society was governed by aristocratic values, where honour and the symbolism of material goods, such as weapons and jewellery, played a central role in individual and collective identity.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_3_eng">The pottery reflects the skill and creativity of the Vacceans. In the district of Carralaceña, near the Duero, the pieces were made with a potter´s wheel and fired in large kilns. These works had both practical and symbolic functions, and were decorated with a variety of techniques such as incising, stamping and modelling.</string>
+
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_0_eng">Tintinnabula, decorated and hanging, were used as protective amulets on doors and cradles. Their sound was considered a protective element against evil. On special occasions, deceased warriors were offered to the vultures, raising them to the sky and symbolising the return of the soul to the cosmos, a spiritual aspect deeply linked to nature and the environment.</string>
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_1_eng">The Vacceans saw the wolf as a protective guardian and the vulture as a spiritual guide to the afterlife. These animals symbolised the connection between the earthly and the transcendental.\nThe Celtic Samhain honours the resting ancestors of the Vacceans and Romans, respecting their memory and connecting visitors to their cultural heritage.</string>
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_2_eng">Found in tombs alongside meat offerings, these animal-shaped boxes may have been used as salt or spice shakers, reflecting the creativity and functionality of funerary objects. A contemporary figure, known as the ‘Lord of the Acorn’, stands as a symbolic guardian at Pintia. It was created to discourage looting and encourage respect for archaeological heritage.</string>
+
+    <!-- Texto pantalla del siguiente punto - cuestionario -->
+
+    <!-- preguntas arquitectura -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_0_eng">What did the Vaccean use to cement their homes?</string>
+    <string name="texto_respuesta_uno_arquitectura_0_eng">Sleepers and wooden stumps</string>
+    <string name="texto_respuesta_dos_arquitectura_0_eng">concrete slabs</string>
+    <string name="texto_respuesta_tres_arquitectura_0_eng">concrete piles</string>
+    <string name="texto_respuesta_cuatro_arquitectura_0_eng">Mix between wood, clay and metals</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_0_eng">Type A foundation[Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_0_eng">Type B foundation[Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_0_eng">Type C foundation[Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_0_eng">Type D foundation[Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_1_eng">What sections were present in their homes?</string>
+    <string name="texto_respuesta_uno_arquitectura_1_eng">Living room, kitchen and yard</string>
+    <string name="texto_respuesta_dos_arquitectura_1_eng">Lobby, kitchen and storage room</string>
+    <string name="texto_respuesta_tres_arquitectura_1_eng">Living room, kitchen and bathrooms</string>
+    <string name="texto_respuesta_cuatro_arquitectura_1_eng">Lobby, kitchen, bathrooms and storage room</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_1_eng">Household type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_1_eng">Household type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_1_eng">Household type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_1_eng">Household type D [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_2_eng">How was the storage system common in the Vaccean dwellings?</string>
+    <string name="texto_respuesta_uno_arquitectura_2_eng">Silos dug in the ground, plastered on the inside or with a vessel in its interior</string>
+    <string name="texto_respuesta_dos_arquitectura_2_eng">Stone shelves attached to adobe walls</string>
+    <string name="texto_respuesta_tres_arquitectura_2_eng">Wooden boxes buried under the floor of the house</string>
+    <string name="texto_respuesta_cuatro_arquitectura_2_eng">Earthenware jars hanging from the ceiling of the house</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_2_eng">Household type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_2_eng">Household type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_2_eng">Household type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_2_eng">Household type D [Photograph]</string>
+
+
+    <!-- preguntas funerario -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_0_eng">What burial rituals did the Vacceans use?</string>
+    <string name="texto_respuesta_uno_funerario_0_eng">Cremation, stoning and encasement</string>
+    <string name="texto_respuesta_dos_funerario_0_eng">Cremation and ash scattering</string>
+    <string name="texto_respuesta_tres_funerario_0_eng">Cremation, Inhumation and exposure to vultures</string>
+    <string name="texto_respuesta_cuatro_funerario_0_eng">Cremation, stone coffin burial and mummification</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_0_eng">Type A burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_0_eng">Type B burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_0_eng">Type C burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_0_eng">Type D burial [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_1_eng">What place was dedicated to burials?</string>
+    <string name="texto_respuesta_uno_funerario_1_eng">Carralaceña</string>
+    <string name="texto_respuesta_dos_funerario_1_eng">Los Cenizales</string>
+    <string name="texto_respuesta_tres_funerario_1_eng">Necropolis de Las Ruedas</string>
+    <string name="texto_respuesta_cuatro_funerario_1_eng">Personal places of each family</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_1_eng">Type A burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_1_eng">Type B burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_1_eng">Type C burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_1_eng">Type D burial [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_2_eng">What was the role of the vulture in Vaccean symbology?</string>
+    <string name="texto_respuesta_uno_funerario_2_eng">It was a sacred bird that carried the souls of fallen warriors to the afterlife</string>
+    <string name="texto_respuesta_dos_funerario_2_eng">It was a symbol of fertility and crop prosperity</string>
+    <string name="texto_respuesta_tres_funerario_2_eng">It represented the rebirth and purification of the soul</string>
+    <string name="texto_respuesta_cuatro_funerario_2_eng">It was a representation of longevity and protection of the home</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_2_eng">Type A burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_2_eng">Type B burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_2_eng">Type C burial [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_2_eng">Type D burial [Photograph]</string>
+
+    <!-- preguntas militar -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_0_eng">How was a Vaccean warrior forged?</string>
+    <string name="texto_respuesta_uno_militar_0_eng">Inherited family prestige</string>
+    <string name="texto_respuesta_dos_militar_0_eng">By post-birth aspect</string>
+    <string name="texto_respuesta_tres_militar_0_eng">Through physical aptitude and honor earned in close combat</string>
+    <string name="texto_respuesta_cuatro_militar_0_eng">For their kindness and community work</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_0_eng">Military type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_militar_0_eng">Military type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_militar_0_eng">Military type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_0_eng">Military type D [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_1_eng">What did the Romans employ from the point of the siege of Pintia?</string>
+    <string name="texto_respuesta_uno_militar_1_eng">Catapult</string>
+    <string name="texto_respuesta_dos_militar_1_eng">Ram</string>
+    <string name="texto_respuesta_tres_militar_1_eng">Spears, javelins and swords</string>
+    <string name="texto_respuesta_cuatro_militar_1_eng">Bows, arrows and darts</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_1_eng">Military type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_militar_1_eng">Military type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_militar_1_eng">Military type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_1_eng">Military type D [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_2_eng">For what reason did weapons accompany the Vaccean warriors in their afterlife?</string>
+    <string name="texto_respuesta_uno_militar_2_eng">Because they represented their courage and honor in combat</string>
+    <string name="texto_respuesta_dos_militar_2_eng">To ensure your protection against supernatural enemies</string>
+    <string name="texto_respuesta_tres_militar_2_eng">As a token of wealth to impress their ancestors</string>
+    <string name="texto_respuesta_cuatro_militar_2_eng">For use in sacred rituals with their gods</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_2_eng">Military type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_militar_2_eng">Military type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_militar_2_eng">Military type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_2_eng">Military type D [Photograph]</string>
+
+    <!-- preguntas costumbres -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_0_eng">Based on the objects found, in what customs did the Vacceans excel?</string>
+    <string name="texto_respuesta_uno_costumbres_0_eng">Pottery and Ornamentation of pieces</string>
+    <string name="texto_respuesta_dos_costumbres_0_eng">Smelting and use of metals</string>
+    <string name="texto_respuesta_tres_costumbres_0_eng">Religiosity</string>
+    <string name="texto_respuesta_cuatro_costumbres_0_eng">Carving and sculpting of parts</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_0_eng">Type A traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_0_eng">Type B traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_0_eng">Type C traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_0_eng">Type D traditions [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_1_eng">What earthenware tools have been found at Pintia?</string>
+    <string name="texto_respuesta_uno_costumbres_1_eng">Vases, rattles and pots, among others</string>
+    <string name="texto_respuesta_dos_costumbres_1_eng">Forks and kitchen utensils</string>
+    <string name="texto_respuesta_tres_costumbres_1_eng">Family statues</string>
+    <string name="texto_respuesta_cuatro_costumbres_1_eng">Ceramic weapons</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_1_eng">Type A traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_1_eng">Type B traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_1_eng">Type C traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_1_eng">Type D traditions [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_2_eng">What interpretation is given to the rattles found in children´s graves?</string>
+    <string name="texto_respuesta_uno_costumbres_2_eng">They are believed to be protective amulets created during pregnancy and childbirth</string>
+    <string name="texto_respuesta_dos_costumbres_2_eng">They were musical instruments for community ceremonies</string>
+    <string name="texto_respuesta_tres_costumbres_2_eng">They were used to measure time by sound</string>
+    <string name="texto_respuesta_cuatro_costumbres_2_eng">They functioned as water containers for funeral rites</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_2_eng">Type A traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_2_eng">Type B traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_2_eng">Type C traditions [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_2_eng">Type D traditions [Photograph]</string>
+
+    <!-- preguntas curiosidades -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_0_eng">The Vacceans lacked something that is very important today</string>
+    <string name="texto_respuesta_uno_curiosidades_0_eng">They did not know the writing</string>
+    <string name="texto_respuesta_dos_curiosidades_0_eng">They did not know wood carving</string>
+    <string name="texto_respuesta_tres_curiosidades_0_eng">They did not know the cult of ancestors</string>
+    <string name="texto_respuesta_cuatro_curiosidades_0_eng">They did not know about religion</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_0_eng">Curiosities type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_0_eng">Curiosities type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_0_eng">Curiosities type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_0_eng">Curiosities type D [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_1_eng">What was a distinctive agricultural Vaccean practice?</string>
+    <string name="texto_respuesta_uno_curiosidades_1_eng">They farmed as a community and distributed the harvests equitably</string>
+    <string name="texto_respuesta_dos_curiosidades_1_eng">They practiced individual agriculture and traded only with the Romans</string>
+    <string name="texto_respuesta_tres_curiosidades_1_eng">They were only dedicated to grazing and gathering wild fruits</string>
+    <string name="texto_respuesta_cuatro_curiosidades_1_eng">They had no agricultural practices; they were nomadic hunter-gatherers</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_1_eng">Curiosities type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_1_eng">Curiosities type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_1_eng">Curiosities type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_1_eng">Curiosities type D [Photograph]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_2_eng">What was the function of wine in the Vaccean society?</string>
+    <string name="texto_respuesta_uno_curiosidades_2_eng">It was a drink for the exclusive consumption of the warrior oligarchy</string>
+    <string name="texto_respuesta_dos_curiosidades_2_eng">It was a drink used only in religious ceremonies</string>
+    <string name="texto_respuesta_tres_curiosidades_2_eng">The wine was consumed only in funeral rituals</string>
+    <string name="texto_respuesta_cuatro_curiosidades_2_eng">It was mainly used in the field to feed animals</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_2_eng">Curiosities type A [Photograph]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_2_eng">Curiosities type B [Photograph]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_2_eng">Curiosities type C [Photograph]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_2_eng">Curiosities type D [Photograph]</string>
+
+    <!-- Pantalla fin de visita -->
+    <string name="texto_fin_visita_eng">Thank you for joining me on this tour. I hope you enjoyed the experience and discovered the richness of Vaccean´s culture. \n \n I look forward to seeing you on future visits!</string>
+    <string name="texto_boton_fin_visita_eng">End</string>
+
+
+    <!-- FIN IDIOMA INGLES -->
+
+
+
+    <!-- IDIOMA ALEMAN -->
+
+    <!-- Textos comunes a varias las pantallas -->
+    <string name="texto_boton_regresar_deu">Zurückkehren</string>
+    <string name="texto_boton_siguiente_deu">Nachfolgend</string>
+    <string name="texto_select_visit_visita_personalizada_deu">Individueller Besuch</string>
+    <string name="texto_boton_arquitectura_visita_personalizada_deu">Architektur</string>
+    <string name="texto_boton_funerario_visita_personalizada_deu">Beerdigung</string>
+    <string name="texto_boton_militar_visita_personalizada_deu">Militär</string>
+    <string name="texto_boton_costumbres_visita_personalizada_deu">Traditionen</string>
+    <string name="texto_boton_curiosidades_visita_personalizada_deu">Kuriositäten</string>
+
+
+    <!--Texto pantalla seleccionar tipo de visita o contacto -->
+    <string name="texto_select_visit_idioma_deu">Wählen Sie Sprache aus</string>
+    <string name="texto_select_visit_visita_express_deu">Expressbesuch 1 Stunde</string>
+    <string name="texto_select_visit_contacto_deu">Kontakt</string>
+
+
+    <!--Texto pantalla de contacto -->
+    <string name="texto_ubicacion_pintia_deu">Hier finden Sie uns</string>
+    <string name="texto_contacto_mas_info_deu">Für weitere Informationen und Führungen rufen Sie uns an oder kontaktieren Sie uns:</string>
+    <string name="texto_contacto_web_pintia_deu">Besuchen Sie unsere Webseite!</string>
+
+    <!-- Texto pantalla de visita express -->
+    <string name="texto_visita_express_deu">Expressbesuch</string>
+    <string name="texto_consejo_girar_movil_deu">Bitte drehen Sie Ihr Telefon um, um den Besuch zu beginnen</string>
+
+    <!-- Texto pantalla de visita personalizada -->
+    <string name="texto_duracion_visita_personalizada_deu">Dauer</string>
+    <string name="texto_tipo_visita_personalizada_deu">Typ</string>
+    <string name="texto_temas_visita_personalizada_deu">Besuchsthemen auswählen:</string>
+    <string name="texto_temas_requeridos_deu">Mindestens ein Thema</string>
+
+    <!-- Texto pantalla del punto inicial de la visita -->
+    <string name="texto_inicial_punto_inicial_deu">Willkommen in Pintia, mein Name ist Ambatus. Es ist mir eine Ehre, Sie heute in diesem Land zu begrüßen, das die Spuren meiner Vorfahren trägt, damit Sie die Seele meines Volkes entdecken können.\n\nPintia ist viel mehr als eine archäologische Stätte, es ist das Zeugnis eines Volkes, das Mut, Gemeinschaftsleben und Verbundenheit mit der Natur schätzte.</string>
+
+    <!-- Texto pantalla - mapa de cada punto -->
+    <string name="texto_dirijase_punto_punto_siguiente_mapa_deu">Gehen Sie zu dem auf der Karte angezeigten Punkt und drücken Sie auf das Bild, um zu Google Maps zu gelangen</string>
+
+    <!-- Texto pantalla del siguiente punto - contenido -->
+
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_0_deu">Die Vacceaner-Wohnungen, die zwischen 30 und 100 Quadratmetern groß waren, variierten je nach Funktion und Status. Die kleineren Häuser verfügten über eine Eingangshalle, eine Küche und einen Abstellraum, während die größeren bis zu sieben Zimmer haben konnten. Sie wurden aus Lehm und Stampflehm gebaut und ihre Wände waren mit Lehm bedeckt, der manchmal weiß oder rot gestrichen war, was eine funktionale und dekorative Ästhetik widerspiegelte.</string>
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_1_deu">Die Häuser wurden auf Holzschwellen gebaut, die in Gräben eingelassen waren. Die Dächer bestanden aus Holzbalken, die mit Lehm bedeckt waren, während die Böden aus Lehm bestanden, der mit Keramik oder Kieselsteinen vermischt war, um die Festigkeit zu gewährleisten. Dieser konstruktive Einfallsreichtum zeichnete sich durch seine Anpassung an die lokalen Ressourcen und klimatischen Bedürfnisse aus.</string>
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_2_deu">In ihren Häusern verfügten die Vacceaner über ausgeklügelte Aufbewahrungssysteme, wie z. B. in den Boden gegrabene Silos oder große unterirdische Behälter. Diese Lösungen optimierten nicht nur die Raumnutzung, sondern bewahrten auch Lebensmittel und wichtige Güter des täglichen Lebens auf.</string>
+
+ <string name="texto_principal_funerario_punto_siguiente_contenido_0_deu">Die Einäscherung war bei den Vacceaner eine gängige Bestattungspraxis. Nachdem der Leichnam eingeäschert worden war, wurde er zusammen mit Grabbeigaben und Opfergaben in Aschenurnen beigesetzt. Dieser Ritus symbolisierte die Begleitung des Verstorbenen auf seiner Reise ins Jenseits und kennzeichnete das Grab mit einer Stele.</string>
+ <string name="texto_principal_funerario_punto_siguiente_contenido_1_deu">Neben der Einäscherung praktizierten die Vacceaner auch die Bestattung und die Aussetzung an Geier. Der letztgenannte Ritus spiegelte eine tiefe symbolische Verbindung wider, denn der Geier galt als heiliger Träger, der die Seelen ins Jenseits führte.</string>
+ <string name="texto_principal_funerario_punto_siguiente_contenido_2_deu">Vacceaner-Gräber enthielten sorgfältig ausgewählte Grabbeigaben wie Rasseln, Waffen und persönliche Gegenstände sowie Lebensmittel und andere Waren. Diese Beigaben spiegelten den sozialen Status des Verstorbenen wider und sicherten sein Wohlergehen im Jenseits.</string>
+
+ <string name="texto_principal_militar_punto_siguiente_contenido_0_deu">In der vakzischen Gesellschaft wurde die Tapferkeit eines Kriegers nicht nur vererbt, sondern auch durch ehrenvolle Taten und den Nahkampf unter Beweis gestellt. Die symbolträchtigen Waffen begleiteten den Krieger sowohl im Leben als auch im Tod.</string>
+ <string name="texto_principal_militar_punto_siguiente_contenido_1_deu">Die Vacceaner stellten ihre Waffen aus Eisen her, einem Material von hohem Wert. Diese Gegenstände hatten nicht nur eine kriegerische Funktion, sondern waren auch Symbole für Macht und Prestige in der sozialen Hierarchie.</string>
+ <string name="texto_principal_militar_punto_siguiente_contenido_2_deu">Die Oligarchie der Krieger kontrollierte Ressourcen und soziale Bündnisse durch die Umverteilung von Gütern wie Fleisch und Wein sowie durch exklusive Aktivitäten, die ihre Autorität und ihr Prestige stärkten.</string>
+
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_0_deu">Die Vacceaner erhielten Edelmetalle wie Eisen, Gold und Bronze, indem sie landwirtschaftliche Überschüsse eintauschten. Dieses Wirtschaftssystem spiegelt ihren Einfallsreichtum bei der Verwaltung der Ressourcen und der Stärkung der Handelsbeziehungen wider.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_1_deu">Aktivitäten wie der Verzehr von Fleisch und Wein waren das Privileg der herrschenden Klasse, die diese Praktiken nutzte, um ihre Machtposition zu behaupten und Bündnisse mit den abhängigen Klassen zu stärken.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_2_deu">Die vakzische Gesellschaft wurde von aristokratischen Werten beherrscht, in denen Ehre und die Symbolik materieller Güter wie Waffen und Schmuck eine zentrale Rolle für die individuelle und kollektive Identität spielten.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_3_deu">Die Töpferwaren spiegeln das Können und die Kreativität der Vacceaner wider. Im Bezirk Carralaceña, in der Nähe des Flusses Duero, wurden die Stücke mit der Töpferscheibe hergestellt und in großen Öfen gebrannt. Diese Werke hatten sowohl praktische als auch symbolische Funktionen und wurden mit verschiedenen Techniken wie Ritzungen, Stempeln und Modellieren verziert.</string>
+
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_0_deu">Tintinnabula, verziert und aufgehängt, wurden als Schutzamulette an Türen und Wiegen verwendet. Ihr Klang galt als schützendes Element gegen das Böse. Zu besonderen Anlässen wurden verstorbene Krieger den Geiern geopfert, die sie in den Himmel hoben und die Rückkehr der Seele in den Kosmos symbolisierten, ein spiritueller Aspekt, der eng mit der Natur und der Umwelt verbunden ist.</string>
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_1_deu">Die Vacceaner sahen den Wolf als schützenden Wächter und den Geier als spirituellen Führer ins Jenseits. Diese Tiere symbolisierten die Verbindung zwischen dem Irdischen und dem Transzendenten.\nDas keltische Samhain ehrt die ruhenden Vorfahren der Vacceaner und Römer, respektiert ihr Andenken und verbindet die Besucher mit ihrem kulturellen Erbe.</string>
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_2_deu">Diese tierförmigen Dosen, die in den Gräbern zusammen mit Fleischopfern gefunden wurden, könnten als Salz- oder Gewürzstreuer verwendet worden sein und spiegeln die Kreativität und Funktionalität von Grabbeigaben wider. Eine zeitgenössische Figur, bekannt als der "Herr der Eichel", steht als symbolischer Wächter in Pintia. Sie wurde geschaffen, um von Plünderungen abzuschrecken und den Respekt vor dem archäologischen Erbe zu fördern.</string>
+
+    <!-- Texto pantalla del siguiente punto - cuestionario -->
+
+    <!-- preguntas arquitectura -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_0_deu">Was haben die Vacceaner benutzt, um ihre Häuser zu zementieren?</string>
+    <string name="texto_respuesta_uno_arquitectura_0_deu">Schwellen und Holzstümpfe</string>
+    <string name="texto_respuesta_dos_arquitectura_0_deu">Betonplatten</string>
+    <string name="texto_respuesta_tres_arquitectura_0_deu">Betonpfähle</string>
+    <string name="texto_respuesta_cuatro_arquitectura_0_deu">Mischung aus Holz, Ton und Metallen</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_0_deu">Stiftung Typ A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_0_deu">Stiftung Typ B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_0_deu">Stiftung Typ C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_0_deu">Stiftung Typ D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_1_deu">Welche Abteilungen gab es in ihren Häusern?</string>
+    <string name="texto_respuesta_uno_arquitectura_1_deu">Wohnzimmer, Küche und Hof</string>
+    <string name="texto_respuesta_dos_arquitectura_1_deu">Lobby, Küche und Lagerraum</string>
+    <string name="texto_respuesta_tres_arquitectura_1_deu">Wohnzimmer, Küche und Bäder</string>
+    <string name="texto_respuesta_cuatro_arquitectura_1_deu">Lobby, Küche, Bäder und Abstellraum</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_1_deu">Haushaltstyp A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_1_deu">Haushaltstyp B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_1_deu">Haushaltstyp C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_1_deu">Haushaltstyp D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_2_deu">Wie war das Speichersystem in den vakzischen Behausungen üblich?</string>
+    <string name="texto_respuesta_uno_arquitectura_2_deu">In den Boden eingegrabene Silos, die innen verputzt sind oder in deren Inneren sich ein Behälter befindet</string>
+    <string name="texto_respuesta_dos_arquitectura_2_deu">An Lehmwänden befestigte Steinregale</string>
+    <string name="texto_respuesta_tres_arquitectura_2_deu">Holzkisten, die unter dem Boden des Hauses vergraben sind</string>
+    <string name="texto_respuesta_cuatro_arquitectura_2_deu">Steingutkrüge, die von der Decke des Hauses hängen</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_2_deu">Haushaltstyp A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_2_deu">Haushaltstyp B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_2_deu">Haushaltstyp C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_2_deu">Haushaltstyp D [Foto]</string>
+
+
+    <!-- preguntas funerario -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_0_deu">Welche Bestattungsrituale pflegten die Vacceaner?</string>
+    <string name="texto_respuesta_uno_funerario_0_deu">Einäscherung, Steinigung und Einhüllung</string>
+    <string name="texto_respuesta_dos_funerario_0_deu">Einäscherung und Ascheverstreuung</string>
+    <string name="texto_respuesta_tres_funerario_0_deu">Einäscherung, Verbrennung und Aussetzung an Geier</string>
+    <string name="texto_respuesta_cuatro_funerario_0_deu">Einäscherung, Steinsargbestattung und Mumifizierung</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_0_deu">Bestattung des Typs A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_0_deu">Bestattung des Typs B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_0_deu">Bestattung des Typs C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_0_deu">Bestattung des Typs D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_1_deu">Welcher Ort war für Bestattungen vorgesehen?</string>
+    <string name="texto_respuesta_uno_funerario_1_deu">Carralaceña</string>
+    <string name="texto_respuesta_dos_funerario_1_deu">Los Cenizales</string>
+    <string name="texto_respuesta_tres_funerario_1_deu">Necropolis de Las Ruedas</string>
+    <string name="texto_respuesta_cuatro_funerario_1_deu">Persönliche Orte der einzelnen Familien</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_1_deu">Bestattung des Typs A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_1_deu">Bestattung des Typs B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_1_deu">Bestattung des Typs C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_1_deu">Bestattung des Typs D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_2_deu">Welche Rolle spielte der Geier in der Vaccean-Symbolik?</string>
+    <string name="texto_respuesta_uno_funerario_2_deu">Er war ein heiliger Vogel, der die Seelen der gefallenen Krieger ins Jenseits trug</string>
+    <string name="texto_respuesta_dos_funerario_2_deu">Er war ein Symbol der Fruchtbarkeit und des Wohlstands der Ernte</string>
+    <string name="texto_respuesta_tres_funerario_2_deu">Sie steht für die Wiedergeburt und Reinigung der Seele</string>
+    <string name="texto_respuesta_cuatro_funerario_2_deu">Es war eine Darstellung der Langlebigkeit und des Schutzes des Hauses</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_2_deu">Bestattung des Typs A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_2_deu">Bestattung des Typs B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_2_deu">Bestattung des Typs C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_2_deu">Bestattung des Typs D [Foto]</string>
+
+    <!-- preguntas militar -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_0_deu">Wie wurde ein Vaccean-Krieger geschmiedet?</string>
+    <string name="texto_respuesta_uno_militar_0_deu">Vererbtes Familienprestige</string>
+    <string name="texto_respuesta_dos_militar_0_deu">Nach dem Aspekt der Nachgeburt</string>
+    <string name="texto_respuesta_tres_militar_0_deu">Durch körperliche Geschicklichkeit und im Nahkampf erworbene Ehre</string>
+    <string name="texto_respuesta_cuatro_militar_0_deu">Für ihre Freundlichkeit und ihr Engagement für die Gemeinschaft</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_0_deu">Militär Typ A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_militar_0_deu">Militär Typ B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_militar_0_deu">Militär Typ C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_0_deu">Militär Typ D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_1_deu">Was haben die Römer bei der Belagerung von Pintia eingesetzt?</string>
+    <string name="texto_respuesta_uno_militar_1_deu">Katapult</string>
+    <string name="texto_respuesta_dos_militar_1_deu">der Sturmbock</string>
+    <string name="texto_respuesta_tres_militar_1_deu">Speere, Wurfspeere und Schwerter</string>
+    <string name="texto_respuesta_cuatro_militar_1_deu">Bögen, Pfeile und Dartpfeile</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_1_deu">Militär Typ A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_militar_1_deu">Militär Typ B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_militar_1_deu">Militär Typ C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_1_deu">Militär Typ D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_2_deu">Aus welchem Grund begleiteten die Waffen die Vaccean-Krieger in ihr Jenseits?</string>
+    <string name="texto_respuesta_uno_militar_2_deu">Weil sie für ihren Mut und ihre Ehre im Kampf stehen</string>
+    <string name="texto_respuesta_dos_militar_2_deu">Um Ihren Schutz vor übernatürlichen Feinden zu gewährleisten</string>
+    <string name="texto_respuesta_tres_militar_2_deu">Als Zeichen des Reichtums, um ihre Vorfahren zu beeindrucken</string>
+    <string name="texto_respuesta_cuatro_militar_2_deu">Zur Verwendung in heiligen Ritualen mit ihren Göttern</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_2_deu">Militär Typ A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_militar_2_deu">Militär Typ B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_militar_2_deu">Militär Typ C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_2_deu">Militär Typ D [Foto]</string>
+
+    <!-- preguntas costumbres -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_0_deu">In welchen Bräuchen haben sich die Vacceaner nach den gefundenen Gegenständen hervorgetan?</string>
+    <string name="texto_respuesta_uno_costumbres_0_deu">Töpferwaren und Verzierung von Stücken</string>
+    <string name="texto_respuesta_dos_costumbres_0_deu">Verhüttung und Verwendung von Metallen</string>
+    <string name="texto_respuesta_tres_costumbres_0_deu">Religiosität</string>
+    <string name="texto_respuesta_cuatro_costumbres_0_deu">Schnitzen und Modellieren von Teilen</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_0_deu">Traditionen des Typs A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_0_deu">Traditionen des Typs B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_0_deu">Traditionen des Typs C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_0_deu">Traditionen des Typs D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_1_deu">Welche Steingutwerkzeuge wurden in Pintia gefunden?</string>
+    <string name="texto_respuesta_uno_costumbres_1_deu">Vasen, Rasseln und Töpfe, u.a.</string>
+    <string name="texto_respuesta_dos_costumbres_1_deu">Gabeln und Küchenutensilien</string>
+    <string name="texto_respuesta_tres_costumbres_1_deu">Familienstatuen</string>
+    <string name="texto_respuesta_cuatro_costumbres_1_deu">Keramische Waffen</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_1_deu">Traditionen des Typs A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_1_deu">Traditionen des Typs B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_1_deu">Traditionen des Typs C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_1_deu">Traditionen des Typs D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_2_deu">Wie werden die Rasseln gedeutet, die in Kindergräbern gefunden werden?</string>
+    <string name="texto_respuesta_uno_costumbres_2_deu">Man glaubt, dass es sich um Schutzamulette handelt, die während der Schwangerschaft und bei der Geburt angelegt werden.</string>
+    <string name="texto_respuesta_dos_costumbres_2_deu">Sie waren Musikinstrumente für Gemeinschaftszeremonien</string>
+    <string name="texto_respuesta_tres_costumbres_2_deu">Sie dienten der Zeitmessung durch Schall</string>
+    <string name="texto_respuesta_cuatro_costumbres_2_deu">Sie dienten als Wasserbehälter für Bestattungsrituale</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_2_deu">Traditionen des Typs A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_2_deu">Traditionen des Typs B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_2_deu">Traditionen des Typs C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_2_deu">Traditionen des Typs D [Foto]</string>
+
+    <!-- preguntas curiosidades -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_0_deu">Den Vacceaner fehlte etwas, das heute sehr wichtig ist</string>
+    <string name="texto_respuesta_uno_curiosidades_0_deu">Sie kannten die Schrift nicht</string>
+    <string name="texto_respuesta_dos_curiosidades_0_deu">Sie kannten keine Holzschnitzerei</string>
+    <string name="texto_respuesta_tres_curiosidades_0_deu">Sie kannten den Kult der Ahnen nicht</string>
+    <string name="texto_respuesta_cuatro_curiosidades_0_deu">Sie wussten nichts über Religion</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_0_deu">Kuriositäten Typ A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_0_deu">Kuriositäten Typ B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_0_deu">Kuriositäten Typ C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_0_deu">Kuriositäten Typ D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_1_deu">Was war eine charakteristische landwirtschaftliche Vacceaner-Praxis?</string>
+    <string name="texto_respuesta_uno_curiosidades_1_deu">Sie bewirtschafteten die Felder als Gemeinschaft und verteilten die Ernten gerecht</string>
+    <string name="texto_respuesta_dos_curiosidades_1_deu">Sie betrieben individuelle Landwirtschaft und handelten nur mit den Römern</string>
+    <string name="texto_respuesta_tres_curiosidades_1_deu">Sie widmeten sich nur dem Weiden und Sammeln von Wildfrüchten</string>
+    <string name="texto_respuesta_cuatro_curiosidades_1_deu">Sie hatten keine landwirtschaftlichen Praktiken, sondern waren nomadische Jäger und Sammler</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_1_deu">Kuriositäten Typ A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_1_deu">Kuriositäten Typ B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_1_deu">Kuriositäten Typ C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_1_deu">Kuriositäten Typ D [Foto]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_2_deu">Welche Funktion hatte der Wein in der vakzäischen Gesellschaft?</string>
+    <string name="texto_respuesta_uno_curiosidades_2_deu">Es war ein Getränk für den exklusiven Konsum der Kriegeroligarchie</string>
+    <string name="texto_respuesta_dos_curiosidades_2_deu">Es war ein Getränk, das nur bei religiösen Zeremonien verwendet wurde</string>
+    <string name="texto_respuesta_tres_curiosidades_2_deu">Der Wein wurde nur bei Beerdigungsritualen getrunken</string>
+    <string name="texto_respuesta_cuatro_curiosidades_2_deu">Es wurde hauptsächlich auf dem Feld zur Fütterung von Tieren verwendet</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_2_deu">Kuriositäten Typ A [Foto]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_2_deu">Kuriositäten Typ B [Foto]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_2_deu">Kuriositäten Typ C [Foto]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_2_deu">Kuriositäten Typ D [Foto]</string>
+
+    <!-- Pantalla fin de visita -->
+    <string name="texto_fin_visita_deu">Vielen Dank, dass Sie mich auf dieser Tour begleitet haben. Ich hoffe, Sie haben die Erfahrung genossen und den Reichtum der vakkanischen Kultur entdeckt. \n \n Ich freue mich darauf, Sie bei zukünftigen Besuchen zu sehen!</string>
+    <string name="texto_boton_fin_visita_deu">Ende</string>
+
+    <!-- FIN IDIOMA ALEMAN -->
+
+
+
+    <!-- IDIOMA FRANCES -->
+
+    <!-- Textos comunes a varias las pantallas -->
+    <string name="texto_boton_regresar_fra">Retourner</string>
+    <string name="texto_boton_siguiente_fra">Ci-dessous</string>
+    <string name="texto_select_visit_visita_personalizada_fra">Visite personnalisée</string>
+    <string name="texto_boton_arquitectura_visita_personalizada_fra">Architecture</string>
+    <string name="texto_boton_funerario_visita_personalizada_fra">Funérailles</string>
+    <string name="texto_boton_militar_visita_personalizada_fra">Militaire</string>
+    <string name="texto_boton_costumbres_visita_personalizada_fra">Traditionnalité</string>
+    <string name="texto_boton_curiosidades_visita_personalizada_fra">Curiosités</string>
+
+
+    <!--Texto pantalla seleccionar tipo de visita o contacto -->
+    <string name="texto_select_visit_idioma_fra">Choisir la langue</string>
+    <string name="texto_select_visit_visita_express_fra">Visite express 1 heure</string>
+    <string name="texto_select_visit_contacto_fra">Contact</string>
+
+
+    <!--Texto pantalla de contacto -->
+    <string name="texto_ubicacion_pintia_fra">Vous nous trouverez ici</string>
+    <string name="texto_contacto_mas_info_fra">Pour plus d´informations et pour les visites guidées, appelez-nous ou contactez-nous:</string>
+    <string name="texto_contacto_web_pintia_fra">Visitez notre site web!</string>
+
+    <!-- Texto pantalla de visita express -->
+    <string name="texto_visita_express_fra">Visite express</string>
+    <string name="texto_consejo_girar_movil_fra">Veuillez retourner votre téléphone pour commencer la visite</string>
+
+    <!-- Texto pantalla de visita personalizada -->
+    <string name="texto_duracion_visita_personalizada_fra">Durée</string>
+    <string name="texto_tipo_visita_personalizada_fra">Type</string>
+    <string name="texto_temas_visita_personalizada_fra">Choisissez un ou plusieurs thèmes de visite:</string>
+    <string name="texto_temas_requeridos_fra">Choisissez au moins un thème</string>
+
+    <!-- Texto pantalla del punto inicial de la visita -->
+    <string name="texto_inicial_punto_inicial_fra">Bienvenue à Pintia, je m´appelle Ambatus. C´est un honneur de vous accueillir aujourd´hui sur cette terre qui porte les traces de mes ancêtres, afin que vous puissiez découvrir l´âme de mon peuple.\n\nPintia est bien plus qu´un site archéologique, c´est le témoignage d´un peuple qui valorisait le courage, la vie en communauté et le lien avec la nature.</string>
+
+    <!-- Texto pantalla - mapa de cada punto -->
+    <string name="texto_dirijase_punto_punto_siguiente_mapa_fra">Allez au point indiqué sur la carte, appuyez sur le image pour accéder à Google Maps</string>
+
+    <!-- Texto pantalla del siguiente punto - contenido -->
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_0_fra">Les habitations de Vaccéens, d´une superficie de 30 à 100 mètres carrés, variaient en fonction de leur fonction et de leur statut. Les plus petites comprenaient un hall d´entrée, une cuisine et un cellier, tandis que les plus grandes pouvaient compter jusqu´à sept pièces. Construites en adobe et en pisé, leurs murs étaient recouverts de boue, parfois peinte en blanc et en rouge, reflétant une esthétique fonctionnelle et décorative.</string>
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_1_fra">Les maisons étaient construites sur des traverses en bois encastrées dans des fossés. Les toits étaient constitués de poutres en bois recouvertes de boue, tandis que les sols étaient faits d´argile mélangée à de la céramique ou à des cailloux pour en assurer la solidité. Cette ingéniosité constructive se distingue par son adaptation aux ressources locales et aux besoins climatiques.</string>
+ <string name="texto_principal_arquitectura_punto_siguiente_contenido_2_fra">A l´intérieur de leurs maisons, les Vaccéens disposaient d´ingénieux systèmes de stockage, tels que des silos creusés dans le sol ou de grandes cuves souterraines. Ces solutions permettaient non seulement d´optimiser l´espace, mais aussi de conserver les denrées alimentaires et les biens essentiels à la vie quotidienne.</string>
+
+ <string name="texto_principal_funerario_punto_siguiente_contenido_0_fra">La crémation était une pratique funéraire courante chez les Vaccéens. Après avoir réduit le corps en cendres, celles-ci étaient placées dans des urnes cinéraires avec des objets funéraires et des offrandes. Ce rite symbolisait l´accompagnement du défunt dans son voyage vers l´au-delà, en marquant la tombe d´une stèle d´identification.</string>
+ <string name="texto_principal_funerario_punto_siguiente_contenido_1_fra">En plus de la crémation, les Vacceos pratiquaient l`enterrement et l`exposition aux vautours. Ce dernier rite reflétait un lien symbolique profond, puisque le vautour était considéré comme un porteur sacré qui guidait les âmes vers l’au-delà.</string>
+ <string name="texto_principal_funerario_punto_siguiente_contenido_2_fra">Les tombes de Vaccéens comprenaient des objets funéraires soigneusement sélectionnés, tels que des hochets, des armes et des objets personnels, ainsi que de la nourriture et d´autres biens. Ces offrandes reflétaient le statut social du défunt et garantissaient son bien-être dans l´au-delà.</string>
+
+ <string name="texto_principal_militar_punto_siguiente_contenido_0_fra">Dans la société de Vaccean, la bravoure guerrière n´était pas seulement héritée, mais démontrée par des actes d´honneur et des combats au corps à corps. Les armes, chargées de symbolisme, accompagnent le guerrier dans la vie comme dans la mort.</string>
+ <string name="texto_principal_militar_punto_siguiente_contenido_1_fra">Les Vaccéens fabriquaient leurs armes en fer, un matériau de grande valeur. Ces objets n´avaient pas seulement une fonction guerrière, mais étaient aussi des symboles de pouvoir et de prestige au sein de la hiérarchie sociale.</string>
+ <string name="texto_principal_militar_punto_siguiente_contenido_2_fra">L´oligarchie guerrière contrôlait les ressources et les alliances sociales par la redistribution de biens, tels que la viande et le vin, et par des activités exclusives qui renforçaient son autorité et son prestige.</string>
+
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_0_fra">Les Vaccéens se procuraient les métaux précieux tels que le fer, l´or et le bronze en troquant les surplus agricoles. Ce système économique reflète leur ingéniosité à gérer les ressources et à renforcer les relations commerciaux.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_1_fra">Les activités telles que la consommation de viande et de vin étaient le privilège de la classe dirigeante, qui utilisait ces pratiques pour affirmer sa position de pouvoir et renforcer ses alliances avec les classes dépendantes.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_2_fra">La société vasconne était régie par des valeurs aristocratiques, où l´honneur et la symbolique des biens matériels, tels que les armes et les bijoux, jouaient un rôle central dans l´identité individuelle et collective.</string>
+ <string name="texto_principal_costumbres_punto_siguiente_contenido_3_fra">Les poteries témoignent de l´habileté et de la créativité des Vaccéens. Dans le district de Carralaceña, près de la rivière Duero, les pièces étaient fabriquées à l´aide d´un tour de potier et cuites dans de grands fours. Ces œuvres avaient une fonction à la fois pratique et symbolique et étaient décorées à l´aide de diverses techniques telles que l´incision, l´estampage et le modelage.</string>
+
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_0_fra">Les Tintinnabula, décorés et suspendus, étaient utilisés comme amulettes protectrices sur les portes et les berceaux. Leur son était considéré comme un élément protecteur contre le mal. Lors d´occasions spéciales, les guerriers décédés étaient offerts aux vautours, les élevant vers le ciel et symbolisant le retour de l´âme dans le cosmos, un aspect spirituel profondément lié à la nature et à l´environnement.</string>
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_1_fra">Les Vaccéens voyaient dans le loup un gardien protecteur et dans le vautour un guide spirituel vers l´au-delà. Ces animaux symbolisaient le lien entre la terre et la transcendance.\nLa Samhain celtique honore les ancêtres des Vaccéens et des Romains, respectant leur mémoire et reliant les visiteurs à leur héritage culturel.</string>
+ <string name="texto_principal_curiosidades_punto_siguiente_contenido_2_fra">Trouvées dans les tombes aux côtés d´offrandes de viande, ces boîtes en forme d´animaux ont pu être utilisées comme salières ou épices, reflétant ainsi la créativité et la fonctionnalité des objets funéraires. Un personnage contemporain, connu sous le nom de « Seigneur du gland », se dresse comme un gardien symbolique à Pintia. Il a été créé pour décourager le pillage et encourager le respect du patrimoine archéologique.</string>
+
+    <!-- Texto pantalla del siguiente punto - cuestionario -->
+
+    <!-- preguntas arquitectura -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_0_fra">Qu´est-ce que les Vaccéens ont utilisé pour cimenter leurs maisons ?</string>
+    <string name="texto_respuesta_uno_arquitectura_0_fra">Traverses et souches en bois</string>
+    <string name="texto_respuesta_dos_arquitectura_0_fra">Dalles de béton</string>
+    <string name="texto_respuesta_tres_arquitectura_0_fra">Poteaux en béton</string>
+    <string name="texto_respuesta_cuatro_arquitectura_0_fra">Mélange de bois, d´argile et de métaux</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_0_fra">Fondation de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_0_fra">Fondation de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_0_fra">Fondation de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_0_fra">Fondation de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_1_fra">Quels étaient les départements dans leurs maisons?</string>
+    <string name="texto_respuesta_uno_arquitectura_1_fra">Salon, cuisine et cour</string>
+    <string name="texto_respuesta_dos_arquitectura_1_fra">Lobby, cuisine et entrepôt</string>
+    <string name="texto_respuesta_tres_arquitectura_1_fra">Salon, cuisine et salles de bains</string>
+    <string name="texto_respuesta_cuatro_arquitectura_1_fra">Hall d´entrée, cuisine, salles de bains et débarras</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_1_fra">Type de ménage A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_1_fra">Type de ménage B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_1_fra">Type de ménage C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_1_fra">Type de ménage D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_arquitectura_2_fra">Quel était le système de stockage habituel dans les habitations vakziennes?</string>
+    <string name="texto_respuesta_uno_arquitectura_2_fra">Silos enfouis dans le sol, dont l´intérieur est crépi ou à l´intérieur duquel se trouve un récipient</string>
+    <string name="texto_respuesta_dos_arquitectura_2_fra">Étagères en pierre fixées aux murs en argile</string>
+    <string name="texto_respuesta_tres_arquitectura_2_fra">Caisses en bois enterrées sous le sol de la maison</string>
+    <string name="texto_respuesta_cuatro_arquitectura_2_fra">Jarres en faïence suspendues au plafond de la maison</string>
+
+    <string name="texto_referencia_respuesta_uno_arquitectura_2_fra">Type de ménage A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_arquitectura_2_fra">Type de ménage B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_arquitectura_2_fra">Type de ménage C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_arquitectura_2_fra">Type de ménage D [photo]</string>
+
+
+    <!-- preguntas funerario -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_0_fra">Quels étaient les rituels funéraires des Vaccéens?</string>
+    <string name="texto_respuesta_uno_funerario_0_fra">Incinération, lapidation et enveloppement</string>
+    <string name="texto_respuesta_dos_funerario_0_fra">Incinération et dispersion des cendres</string>
+    <string name="texto_respuesta_tres_funerario_0_fra">Incinération, crémation et exposition aux vautours</string>
+    <string name="texto_respuesta_cuatro_funerario_0_fra">Incinération, inhumation sur un cercueil de pierre et momification</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_0_fra">Enterrement de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_0_fra">Enterrement de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_0_fra">Enterrement de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_0_fra">Enterrement de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_1_fra">Quel était le lieu prévu pour les enterrements ?</string>
+    <string name="texto_respuesta_uno_funerario_1_fra">Carralaceña</string>
+    <string name="texto_respuesta_dos_funerario_1_fra">Los Cenizales</string>
+    <string name="texto_respuesta_tres_funerario_1_fra">Necropolis de Las Ruedas</string>
+    <string name="texto_respuesta_cuatro_funerario_1_fra">Lieux personnels de chaque famille</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_1_fra">Enterrement de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_1_fra">Enterrement de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_1_fra">Enterrement de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_1_fra">Enterrement de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_funerario_2_fra">Quel était le rôle du vautour dans le symbolisme des Vaccéens?</string>
+    <string name="texto_respuesta_uno_funerario_2_fra">C´était un oiseau sacré qui transportait les âmes des guerriers morts dans l´au-delà</string>
+    <string name="texto_respuesta_dos_funerario_2_fra">Il était un symbole de fertilité et de prospérité des récoltes</string>
+    <string name="texto_respuesta_tres_funerario_2_fra">Elle représente la renaissance et la purification de l´âme</string>
+    <string name="texto_respuesta_cuatro_funerario_2_fra">C´était une représentation de la longévité et de la protection de la maison</string>
+
+    <string name="texto_referencia_respuesta_uno_funerario_2_fra">Enterrement de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_funerario_2_fra">Enterrement de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_funerario_2_fra">Enterrement de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_funerario_2_fra">Enterrement de type D [photo]</string>
+
+    <!-- preguntas militar -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_0_fra">Comment un guerrier Vaccéen a-t-il été forgé ?</string>
+    <string name="texto_respuesta_uno_militar_0_fra">Un prestige familial hérité</string>
+    <string name="texto_respuesta_dos_militar_0_fra">Selon l´aspect du post-partum</string>
+    <string name="texto_respuesta_tres_militar_0_fra">Honneur acquis grâce à l´habileté physique et au combat rapproché</string>
+    <string name="texto_respuesta_cuatro_militar_0_fra">Pour leur gentillesse et leur engagement envers la communauté</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_0_fra">Militaire de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_militar_0_fra">Militaire de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_militar_0_fra">Militaire de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_0_fra">Militaire de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_1_fra">Qu´ont utilisé les Romains lors du siège de Pintia?</string>
+    <string name="texto_respuesta_uno_militar_1_fra">Catapulte</string>
+    <string name="texto_respuesta_dos_militar_1_fra">le bélier</string>
+    <string name="texto_respuesta_tres_militar_1_fra">Lances, javelots et épées</string>
+    <string name="texto_respuesta_cuatro_militar_1_fra">Arcs, flèches et fléchettes</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_1_fra">Militaire de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_militar_1_fra">Militaire de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_militar_1_fra">Militaire de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_1_fra">Militaire de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_militar_2_fra">Pour quelle raison les armes ont-elles accompagné les guerriers Vaccéens dans leur au-delà?</string>
+    <string name="texto_respuesta_uno_militar_2_fra">Parce qu´ils défendent leur courage et leur honneur au combat</string>
+    <string name="texto_respuesta_dos_militar_2_fra">Pour assurer votre protection contre les ennemis surnaturels</string>
+    <string name="texto_respuesta_tres_militar_2_fra">En signe de richesse, pour impressionner leurs ancêtres</string>
+    <string name="texto_respuesta_cuatro_militar_2_fra">À utiliser dans les rituels sacrés avec leurs dieux</string>
+
+    <string name="texto_referencia_respuesta_uno_militar_2_fra">Militaire de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_militar_2_fra">Militaire de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_militar_2_fra">Militaire de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_militar_2_fra">Militaire de type D [photo]</string>
+
+    <!-- preguntas costumbres -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_0_fra">D´après les objets trouvés, dans quelles coutumes les Vaccéens se sont-ils distingués?</string>
+    <string name="texto_respuesta_uno_costumbres_0_fra">Poterie et décoration de pièces</string>
+    <string name="texto_respuesta_dos_costumbres_0_fra">Fonderie et utilisation des métaux</string>
+    <string name="texto_respuesta_tres_costumbres_0_fra">Religiosité</string>
+    <string name="texto_respuesta_cuatro_costumbres_0_fra">Sculpture et modelage de pièces</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_0_fra">Traditions de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_0_fra">Traditions de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_0_fra">Traditions de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_0_fra">Traditions de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_1_fra">Quels outils en faïence ont été trouvés à Pintia?</string>
+    <string name="texto_respuesta_uno_costumbres_1_fra">Vases, hochets et pots, entre autres</string>
+    <string name="texto_respuesta_dos_costumbres_1_fra">Fourchettes et ustensiles de cuisine</string>
+    <string name="texto_respuesta_tres_costumbres_1_fra">Statues de famille</string>
+    <string name="texto_respuesta_cuatro_costumbres_1_fra">Armes en céramique</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_1_fra">Traditions de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_1_fra">Traditions de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_1_fra">Traditions de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_1_fra">Traditions de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_costumbres_2_fra">Comment interprète-t-on les hochets trouvés dans les tombes d´enfants?</string>
+    <string name="texto_respuesta_uno_costumbres_2_fra">On pense qu´il s´agit d´amulettes de protection qui sont mises en place pendant la grossesse et lors de l´accouchement</string>
+    <string name="texto_respuesta_dos_costumbres_2_fra">Ils étaient des instruments de musique pour les cérémonies communautaires</string>
+    <string name="texto_respuesta_tres_costumbres_2_fra">Ils servaient à mesurer le temps par le son</string>
+    <string name="texto_respuesta_cuatro_costumbres_2_fra">Ils servaient de réservoirs d´eau pour les rituels funéraires</string>
+
+    <string name="texto_referencia_respuesta_uno_costumbres_2_fra">Traditions de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_costumbres_2_fra">Traditions de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_costumbres_2_fra">Traditions de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_costumbres_2_fra">Traditions de type D [photo]</string>
+
+    <!-- preguntas curiosidades -->
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_0_fra">Il manquait aux Vaccéens quelque chose de très important aujourd´hui</string>
+    <string name="texto_respuesta_uno_curiosidades_0_fra">Ils ne connaissaient pas les Écritures</string>
+    <string name="texto_respuesta_dos_curiosidades_0_fra">Ils ne connaissaient pas la sculpture sur bois</string>
+    <string name="texto_respuesta_tres_curiosidades_0_fra">Ils ne connaissaient pas le culte des ancêtres</string>
+    <string name="texto_respuesta_cuatro_curiosidades_0_fra">Ils ne connaissaient rien à la religion</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_0_fra">Curiosités de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_0_fra">Curiosités de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_0_fra">Curiosités de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_0_fra">Curiosités de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_1_fra">Quelle était une pratique agricole caractéristique des Vaccéens?</string>
+    <string name="texto_respuesta_uno_curiosidades_1_fra">Ils cultivaient les champs en tant que communauté et partageaient les récoltes de manière équitable</string>
+    <string name="texto_respuesta_dos_curiosidades_1_fra">Ils pratiquaient l´agriculture individuelle et ne faisaient du commerce qu´avec les Romains</string>
+    <string name="texto_respuesta_tres_curiosidades_1_fra">Ils se consacraient uniquement au pâturage et à la cueillette de fruits sauvages</string>
+    <string name="texto_respuesta_cuatro_curiosidades_1_fra">Ils n´avaient pas de pratiques agricoles, mais étaient des chasseurs-cueilleurs nomades</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_1_fra">Curiosités de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_1_fra">Curiosités de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_1_fra">Curiosités de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_1_fra">Curiosités de type D [photo]</string>
+
+    <string name="texto_pregunta_tematica_punto_siguiente_cuestionario_curiosidades_2_fra">Quelle était la fonction du vin dans la société vécue par les Vaccéens?</string>
+    <string name="texto_respuesta_uno_curiosidades_2_fra">C´était une boisson destinée à la consommation exclusive de l´oligarchie guerrière</string>
+    <string name="texto_respuesta_dos_curiosidades_2_fra">C´était une boisson utilisée uniquement lors des cérémonies religieuses</string>
+    <string name="texto_respuesta_tres_curiosidades_2_fra">Le vin n´était consommé que lors des rituels funéraires</string>
+    <string name="texto_respuesta_cuatro_curiosidades_2_fra">Il était principalement utilisé dans les champs pour nourrir les animaux</string>
+
+    <string name="texto_referencia_respuesta_uno_curiosidades_2_fra">Curiosités de type A [photo]</string>
+    <string name="texto_referencia_respuesta_dos_curiosidades_2_fra">Curiosités de type B [photo]</string>
+    <string name="texto_referencia_respuesta_tres_curiosidades_2_fra">Curiosités de type C [photo]</string>
+    <string name="texto_referencia_respuesta_cuatro_curiosidades_2_fra">Curiosités de type D [photo]</string>
+
+    <!-- Pantalla fin de visita -->
+    <string name="texto_fin_visita_fra">Merci beaucoup de m´avoir accompagné lors de cette visite. J´espère que vous avez apprécié l´expérience et que vous avez découvert la richesse de la culture vakienne. \n \n Je me réjouis de vous voir lors de vos prochaines visites !</string>
+    <string name="texto_boton_fin_visita_fra">Fin</string>
+
+    <!-- FIN IDIOMA FRANCES -->
+
+</resources>

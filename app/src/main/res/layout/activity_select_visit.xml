@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectVisitActivity"
+    android:background="@color/brown_light">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_texto_pintia"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texto_pintia_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_loading_app_pintia_tour"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:fontFamily="@font/grandstander_mediana"
+            android:layout_marginTop="7dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_imagen_ciervo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.30"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_texto_pintia"
+        >
+
+        <ImageView
+            android:id="@+id/imagen_ciervo_pintia_tour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tint="@color/black"
+            android:src="@drawable/imagen_ciervo"
+            android:rotation="270"
+            android:layout_marginStart="15dp">
+        </ImageView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_contenido_principal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.60"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_imagen_ciervo">
+
+        <TextView
+            android:id="@+id/texto_select_visit_idioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_select_visit_idioma"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/grandstander_mediana"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_boton_idiomas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/texto_idioma"
+            android:weightSum="4"
+            >
+
+            <Button
+                android:id="@+id/boton_idioma_espanol"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:drawableTop="@drawable/flag_for_flag_spain_svgrepo_com"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.LeftRounded"
+                android:layout_weight="1"
+                android:text=""
+                android:backgroundTint="@color/brown_normal"
+                android:layout_marginStart="35dp"
+                />
+
+            <Button
+                android:id="@+id/boton_idioma_aleman"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:drawableTop="@drawable/flag_for_flag_germany_svgrepo_com"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rectangle"
+                android:layout_weight="1"
+                android:text=""
+                android:backgroundTint="@color/brown_normal"
+                android:layout_marginStart="10dp"/>
+
+            <Button
+                android:id="@+id/boton_idioma_frances"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:drawableTop="@drawable/flag_for_flag_france_svgrepo_com"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rectangle"
+                android:layout_weight="1"
+                android:text=""
+                android:backgroundTint="@color/brown_normal"
+                android:layout_marginStart="10dp"/>
+
+            <Button
+                android:id="@+id/boton_idioma_ingles"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:drawableTop="@drawable/flag_for_flag_united_kingdom_svgrepo_com"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.RightRounded"
+                android:layout_weight="1"
+                android:text=""
+                android:backgroundTint="@color/brown_normal"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_visita_express"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_boton_idiomas">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewVisitaExpress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/brown_normal"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texto_select_visita_express"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="@string/texto_select_visit_visita_express"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/grandstander_mediana">
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30sp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        app:tint = "@color/black"
+                        android:src="@drawable/clock_three_svgrepo_com">
+                    </ImageView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_visita_personalizada"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_visita_express">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewVisitaPersonalizada"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/brown_normal"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texto_select_visita_personalizada"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="@string/texto_select_visit_visita_personalizada"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/grandstander_mediana">
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30sp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        app:tint = "@color/black"
+                        android:src="@drawable/pencil_svgrepo_com">
+                    </ImageView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_contacto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_visita_personalizada">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewContacto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/brown_normal"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texto_select_visit_contacto"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="@string/texto_select_visit_contacto"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/grandstander_mediana"
+                        android:layout_marginStart="40dp">
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30sp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        app:tint = "@color/black"
+                        android:src="@drawable/phone_call_ringing_svgrepo_com">
+                    </ImageView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

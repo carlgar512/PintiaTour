@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactInfoActivity"
+    android:background="@color/brown_light">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_texto_pintia"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texto_pintia_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_loading_app_pintia_tour"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:fontFamily="@font/grandstander_mediana"
+            android:layout_marginTop="7dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_contenido_principal_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.90"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_texto_pintia">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_ubicacion_pintia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/texto_ubicacion_pintia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/grandstander_mediana"
+                android:text="@string/texto_ubicacion_pintia"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="17sp"></TextView>
+
+            <ImageView
+                android:id="@+id/imagen_pointer_ubicacion_google_maps"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/location_pin_svgrepo_com"></ImageView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_texto_contacto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_ubicacion_pintia">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imagen_gps_google_maps_pintia"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="2.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto_gps_google_maps_pintia"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.roundedImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp">
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/texto_contacto_mas_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/grandstander_mediana"
+                android:justificationMode="inter_word"
+                android:text="@string/texto_contacto_mas_info"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="17sp">
+            </TextView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_telefono_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout_texto_contacto">
+
+                <TextView
+                    android:id="@+id/texto_contacto_telefono"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:text="@string/texto_contacto_telefono"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="17sp">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/imagen_telefono_contacto"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/phone_outgoing_svgrepo_com"
+                    app:tint="@color/red_darker">
+                </ImageView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_web_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout_telefono_contacto">
+
+                <TextView
+                    android:id="@+id/texto_contacto_web_pintia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:text="@string/texto_contacto_web_pintia"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="17sp">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/imagen_google_chrome"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/google_chrome_svgrepo_com"
+                    app:tint="@color/red_darker">
+                </ImageView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_boton_regresar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout_web_contacto">
+
+                <Button
+                    android:id="@+id/boton_regresar_contacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="@color/brown_normal"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:text="@string/texto_boton_regresar"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded">
+                </Button>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

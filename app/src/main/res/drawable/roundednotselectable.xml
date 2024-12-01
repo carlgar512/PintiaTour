@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent"/>
+    <!-- Borde de puntos -->
+    <stroke
+        android:color="@color/brown_normal"
+        android:dashWidth="20dp"
+        android:dashGap="5dp"
+        android:width="5dp"/>
+    <!-- Esquinas redondeadas -->
+    <corners android:radius="30dp"/>
+</shape>

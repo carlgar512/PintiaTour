@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Rojo -->
+    <color name="red_pure">#FF0000</color>
+    <color name="red_soft">#FF6666</color>
+    <color name="red_dark">#CC0000</color>
+    <color name="red_darker">#D13438</color>
+
+    <!-- Azul -->
+    <color name="blue_pure">#0000FF</color>
+    <color name="blue_soft">#6699FF</color>
+    <color name="blue_dark">#003366</color>
+    <color name="blue_cerulean">#A7D3F3</color>
+
+    <!-- Verde -->
+    <color name="green_pure">#00FF00</color>
+    <color name="green_mint">#66FF66</color>
+    <color name="green_dark">#006600</color>
+    <color name="green_darker">#094509</color>
+
+    <!-- Amarillo -->
+    <color name="yellow_pure">#FFFF00</color>
+    <color name="yellow_soft">#FFFF66</color>
+    <color name="yellow_mustard">#FFCC00</color>
+
+    <!-- Naranja -->
+    <color name="orange_pure">#FFA500</color>
+    <color name="orange_soft">#FFCC99</color>
+    <color name="orange_dark">#CC6600</color>
+
+    <!-- Rosa -->
+    <color name="pink_pure">#FF00FF</color>
+    <color name="pink_light">#FF99CC</color>
+    <color name="pink_dark">#CC0099</color>
+
+    <!-- Morado -->
+    <color name="purple_pure">#800080</color>
+    <color name="lavender">#CC99FF</color>
+    <color name="purple_dark">#4B0082</color>
+
+    <!-- Neutros -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#F0F0F0</color>
+    <color name="gray_medium">#999999</color>
+    <color name="gray_dark">#333333</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="slate_gray">#708090</color>
+    <color name="grayish">#D0D0D0</color>
+
+    <!-- Marron -->
+    <color name="brown_light">#EBE3A2</color>
+    <color name="brown_normal">#BB8F6F</color>
+
+</resources>

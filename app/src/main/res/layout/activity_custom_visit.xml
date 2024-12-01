@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomVisitActivity"
+    android:background="@color/brown_light">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_texto_pintia"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texto_pintia_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_loading_app_pintia_tour"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:fontFamily="@font/grandstander_mediana"
+            android:layout_marginTop="7dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_contenido_principal_personalizada"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.92"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_texto_pintia"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_texto_visita_personalizada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_texto_pintia"
+            >
+
+            <TextView
+                android:id="@+id/texto_visita_personalizada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_select_visit_visita_personalizada"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/grandstander_mediana"
+                >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imagen_reloj_visita_express"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pencil_svgrepo_com"
+                app:tint="@color/red_darker"
+                android:layout_marginStart="10dp">
+            </ImageView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_opciones_visita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_contenido_principal_personalizada"
+            >
+
+            <TextView
+                android:id="@+id/texto_duracion_fijo_visita_personalizada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_duracion_visita_personalizada"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:fontFamily="@font/grandstander_mediana"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                >
+            </TextView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_duracion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:weightSum="4"
+                app:layout_constraintTop_toBottomOf="@+id/texto_duracion_fijo_visita_personalizada">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/boton_flecha_abajo_duracion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="55dp"
+                    android:layout_gravity="center"
+                    android:rotationX="180"
+                    android:src="@drawable/arrow_up_svgrepo_com"
+                    app:tint="@color/grayish"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:backgroundTint="@color/green_dark"
+                    >
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <TextView
+                    android:id="@+id/texto_duracion_visita_personalizada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="5 min"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:layout_weight="4"
+                    >
+                </TextView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/boton_flecha_arriba_duracion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="55dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arrow_up_svgrepo_com"
+                    app:tint="@color/grayish"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:backgroundTint="@color/green_dark">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/texto_tipo_fijo_visita_personalizada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_tipo_visita_personalizada"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:fontFamily="@font/grandstander_mediana"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="5dp"
+                >
+            </TextView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/roundednotselectable"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:weightSum="4"
+                app:layout_constraintTop_toBottomOf="@+id/texto_tipo_fijo_visita_personalizada">
+
+                <TextView
+                    android:id="@+id/texto_tipo_visita_personalizada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:text="Recorrido por género"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:layout_weight="4"
+                    >
+                </TextView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_temas_visita"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout_tipo">
+
+                <TextView
+                    android:id="@+id/texto_temas_fijo_visita_personalizada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/texto_temas_visita_personalizada"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:layout_marginTop="10dp"
+                    >
+                </TextView>
+
+                <Button
+                    android:id="@+id/boton_arquitectura"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:text="@string/texto_boton_arquitectura_visita_personalizada"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:backgroundTint="@color/brown_normal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="2dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/boton_funerario"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:text="@string/texto_boton_funerario_visita_personalizada"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:backgroundTint="@color/brown_normal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="2dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/boton_militar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:text="@string/texto_boton_militar_visita_personalizada"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:backgroundTint="@color/brown_normal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="2dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/boton_costumbres"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:text="@string/texto_boton_costumbres_visita_personalizada"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:backgroundTint="@color/brown_normal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="2dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/boton_curiosidades"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:text="@string/texto_boton_curiosidades_visita_personalizada"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:backgroundTint="@color/brown_normal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp">
+                </Button>
+
+                <TextView
+                    android:id="@+id/texto_temas_requeridos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_temas_requeridos"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textColor="@color/red_darker"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    >
+                </TextView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_botones_volver_siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_opciones_visita"
+            >
+
+            <Button
+                android:id="@+id/boton_regresar_visita_personalizada"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_weight="0.7"
+                android:layout_marginStart="40dp"
+                android:layout_gravity="center"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                android:text="@string/texto_boton_regresar"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/grandstander_mediana"
+                android:backgroundTint="@color/brown_normal"
+                android:singleLine="true">
+            </Button>
+
+            <Button
+                android:id="@+id/boton_siguiente_pantalla_personalizada"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_marginEnd="40dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                android:text="@string/texto_boton_siguiente"
+                android:textColor="@color/grayish"
+                android:textSize="18sp"
+                android:fontFamily="@font/grandstander_mediana"
+                android:backgroundTint="@color/green_dark"
+                android:layout_marginStart="15dp"
+                android:singleLine="true">
+            </Button>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

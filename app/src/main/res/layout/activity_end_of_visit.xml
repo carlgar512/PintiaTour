@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndOfVisitActivity"
+    android:background="@color/brown_light">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_texto_pintia_punto_inicial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texto_pintia_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_loading_app_pintia_tour"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:fontFamily="@font/grandstander_mediana"
+            android:layout_weight="0.1"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/texto_visita_express_o_personalizada_fin_visita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_visita_express"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:fontFamily="@font/grandstander_mediana"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/boton_salir"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="55dp"
+            android:layout_gravity="center"
+            android:src="@drawable/salida"
+            app:tint="@color/grayish"
+            app:maxImageSize="40dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+            android:backgroundTint="@color/red_darker"
+            >
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout_contenido_fin_visita"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_texto_pintia_punto_inicial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_texto_botones_punto_inicial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            >
+
+            <TextView
+                android:id="@+id/texto_fin_visita"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/texto_fin_visita"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:visibility="visible"
+                android:fontFamily="@font/grandstander_mediana"
+                android:layout_marginTop="30dp"
+                android:layout_weight="0.8"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_botones_volver_siguiente_punto_inicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/linear_layout_texto_botones_punto_inicial"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/boton_audio"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="55dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/audiosinfondo"
+                    app:tint="@color/grayish"
+                    app:maxImageSize="150dp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:backgroundTint="@color/green_dark">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <TextView
+                    android:id="@+id/texto_contador_tiempo_fin_visita"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="32:51"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:layout_marginStart="20dp"
+                    >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/imagen_reloj_contador_punto_inicial"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/clock_three_svgrepo_com"
+                    app:tint="@color/red_darker">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/boton_regresar_fin_visita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:text="@string/texto_boton_regresar"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:backgroundTint="@color/brown_normal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:singleLine="true">
+                </Button>
+
+                <Button
+                    android:id="@+id/boton_fin_visita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                    android:text="@string/texto_boton_fin_visita"
+                    android:textColor="@color/grayish"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/grandstander_mediana"
+                    android:backgroundTint="@color/green_dark"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:singleLine="true">
+                </Button>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_guia_vacceo_punto_inicial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagen_guia_vacceo"
+                android:layout_width="160dp"
+                android:layout_height="310dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vaccei_guide">
+            </ImageView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Textos comunes a varias las pantallas -->
+        <string name="texto_centro_estudios_vacceos">Vaccei studies Center</string>
+        <string name="texto_boton_regresar">Return</string>
+        <string name="texto_boton_siguiente">Next</string>
+        <string name="texto_select_visit_visita_personalizada">Custom visit</string>
+        <string name="minutos"> min</string>
+
+        <!--Texto pantalla seleccionar tipo de visita o contacto -->
+        <string name="app_name">Pintia Tour</string>
+        <string name="texto_loading_app_pintia_tour">Pintia Tour</string>
+        <string name="texto_select_visit_idioma">Language</string>
+        <string name="texto_select_visit_visita_express">Express visit 30 min</string>
+        <string name="texto_select_visit_contacto">Contact</string>
+
+        <!--Texto pantalla de contacto -->
+        <string name="texto_ubicacion_pintia">Here you can find us</string>
+        <string name="texto_contacto_mas_info">For more info and guided visits call us:</string>
+        <string name="texto_contacto_telefono">983 88 12 40</string>
+        <string name="texto_contacto_web_pintia">https://www.pintiavaccea.es</string>
+
+
+        <!-- Texto pantalla de visita express -->
+        <string name="texto_visita_express">Visita express</string>
+        <string name="texto_consejo_girar_movil">Please, place your mobile phone horizontally to begin the visit.</string>
+
+        <!-- Texto pantalla de visita personalizada -->
+        <string name="texto_duracion_visita_personalizada">Duration</string>
+        <string name="texto_minutos_duracion_visita_personalizada">10</string>
+        <string name="texto_tipo_visita_personalizada">Type</string>
+        <string name="texto_temas_visita_personalizada">Choose one or more visit topics:</string>
+        <string name="texto_boton_arquitectura_visita_personalizada">Architecture</string>
+        <string name="texto_boton_funerario_visita_personalizada">Funeral</string>
+        <string name="texto_boton_militar_visita_personalizada">Military</string>
+        <string name="texto_boton_costumbres_visita_personalizada">Traditions</string>
+        <string name="texto_boton_curiosidades_visita_personalizada">Curiosities</string>
+</resources>

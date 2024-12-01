@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Capa de fondo -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/brown_normal" />
+        </shape>
+    </item>
+    <!-- Capa del borde -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+            android:color="@color/black" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>

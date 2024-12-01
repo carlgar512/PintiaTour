@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearance.Fab.Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">30dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Fab.almostRounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <!-- Nuevo estilo que redondea solo el lado izquierdo -->
+    <style name="ShapeAppearance.Fab.LeftRounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <!-- Redondear solo esquinas superiores e inferiores izquierdas -->
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+
+        <!-- Mantener esquinas derechas rectas -->
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerSizeTopRight">0dp</item>
+
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- Nuevo estilo que redondea solo el lado derecho -->
+    <style name="ShapeAppearance.Fab.RightRounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <!-- Redondear solo esquinas superiores e inferiores derechas -->
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopRight">25dp</item>
+
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+
+        <!-- Mantener esquinas izquierdas rectas -->
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+
+        <item name="cornerFamilyBottomLeft">cut</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <!-- Nuevo estilo rectangular -->
+    <style name="ShapeAppearance.Fab.Rectangle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <!-- Mantener todas las esquinas rectas -->
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Fab.CompletelyRounded" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.Fab.roundedImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+</resources>
