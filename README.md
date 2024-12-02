@@ -1,93 +1,80 @@
 # Pintia Tour - Grupo 2
 
+¡Bienvenido al repositorio de **Pintia Tour**! Este es el código fuente de nuestra aplicación móvil desarrollada en **Kotlin** utilizando **Android Studio**. Este proyecto ha sido creado por el **Grupo 2** con el propósito de ofrecer una experiencia interactiva y educativa sobre el **Complejo de Estudios Vacceos de la ciudad de Pintia**.
 
+Este proyecto forma parte de la asignatura de **Sistemas Móviles** de la **Universidad de Valladolid**, donde aplicamos los conocimientos adquiridos en el desarrollo de aplicaciones móviles.
 
-## Getting started
+---
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## 📱 Descripción de la Aplicación
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+**Pintia Tour** es una aplicación de guía turística diseñada para proporcionar a los usuarios información detallada y accesible sobre el Complejo de Estudios Vacceos. Las características principales incluyen:
 
-## Add your files
+- **Audioguías:** Contenido narrado para que los visitantes puedan disfrutar de la experiencia sin necesidad de leer.
+- **Pantallas temáticas:** Información organizada sobre distintas áreas y temáticas del complejo.
+- **Interfaz amigable:** Navegación sencilla e intuitiva para usuarios de todas las edades.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### 🌍 Uso de la Aplicación
+La idea principal de **Pintia Tour** es que los usuarios descarguen la aplicación y realicen un recorrido por su cuenta, visitando los puntos de interés indicados en la guía. La aplicación incluye:
 
-```
-cd existing_repo
-git remote add origin https://gitlab.inf.uva.es/fracura/pintia-tour-grupo-2.git
-git branch -M main
-git push -uf origin main
-```
+1. **Coordinación con Google Maps:** Permite al usuario llegar exactamente a los sitios mencionados.
+2. **Actividades interactivas:** Preguntas tipo test y actividades dinámicas que enriquecen la experiencia del visitante.
+3. **Contenido multimedia:** Imágenes, audios y videos para ofrecer un enfoque más inmersivo.
+4. **Idiomas disponibles:** Todo el contenido está disponible en **español**, **alemán**, **francés** e **inglés** para adaptarse a una audiencia internacional.
 
-## Integrate with your tools
+Nuestra intención es ofrecer una herramienta sencilla y útil que enriquezca las visitas al complejo y permita una exploración autónoma.
 
-- [ ] [Set up project integrations](https://gitlab.inf.uva.es/fracura/pintia-tour-grupo-2/-/settings/integrations)
+---
 
-## Collaborate with your team
+## 📖 Información del lugar
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+**Pintia Tour** incluye un apartado dedicado a ofrecer información adicional sobre el Complejo de Estudios Vacceos. Este apartado proporciona:
 
-## Test and Deploy
+- **Teléfono de contacto:** Para consultas directas con la administración del complejo.
+- **Página web oficial:** Donde los usuarios pueden explorar información más detallada y actualizada.
+- **Promoción de visitas guiadas:** Una invitación a contratar experiencias guiadas que ofrecen una visión más completa y enriquecedora del lugar.
 
-Use the built-in continuous integration in GitLab.
+Este esfuerzo refleja nuestro compromiso de hacer el lugar más conocido, despertar el interés del usuario y fomentar un vínculo más estrecho con el patrimonio cultural de Pintia.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+---
 
-***
+## 🛠️ Tecnologías y Configuración
 
-# Editing this README
+### Tecnologías utilizadas
+- **Lenguaje:** Kotlin
+- **IDE:** Android Studio
+- **Frameworks y bibliotecas principales:**
+  - **Material Design**: Para un diseño atractivo y moderno.
+  - **Glide**: Para la gestión eficiente de imágenes.
+  - **Google Maps API**: Para la navegación y ubicación precisa.
+  - **AndroidX Components**: Para compatibilidad y soporte de librerías modernas.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+### Configuración del proyecto
+- **Nombre del paquete:** `com.example.pintiatour`
+- **Compatibilidad:**
+  - **Min SDK:** 24 (Android 7.0 Nougat)
+  - **Target SDK:** 34 (Android 14)
+- **Versión actual:**
+  - **Version Code:** 1
+  - **Version Name:** 1.0
+- **Opciones de compilación:**
+  - **Compatibilidad con Java 8** para mejorar la funcionalidad del código.
 
-## Suggestions for a good README
+---
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## 🚀 Funcionalidades
 
-## Name
-Choose a self-explaining name for your project.
+1. **Exploración temática:** Pantallas que muestran información detallada y multimedia sobre diferentes aspectos de la cultura vaccea.
+2. **Audioguías:** Audio narrado que complementa la experiencia del visitante.
+3. **Ubicación precisa:** Integración con Google Maps para guiar al usuario hacia los puntos de interés.
+4. **Interactividad:** Actividades y preguntas para hacer la visita más dinámica.
+5. **Información del lugar:** Teléfono de contacto, página web y promoción de visitas guiadas.
+6. **Multilenguaje:** Disponible en español, alemán, francés e inglés para una audiencia internacional.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+---
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## 👩‍💻 Instalación y Ejecución
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/carlgar512/PintiaTour.git
