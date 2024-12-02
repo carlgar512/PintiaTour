@@ -16,7 +16,8 @@
         android:orientation="horizontal"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="3">
 
         <TextView
             android:id="@+id/texto_pintia_tour"
@@ -26,41 +27,54 @@
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="28dp"
+            android:textSize="28sp"
             android:fontFamily="@font/grandstander_mediana"
             android:layout_weight="0.1"
             android:layout_marginStart="20dp"
             />
-
-        <TextView
-            android:id="@+id/texto_visita_express_o_personalizada_fin_visita"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texto_visita_express"
-            android:layout_gravity="center"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            android:fontFamily="@font/grandstander_mediana"
-            android:layout_weight="1"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_texto_pintia_puntos_siguientes_ladoDerecho"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:weightSum="2"
             >
-        </TextView>
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/boton_salir"
-            android:layout_marginStart="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabCustomSize="55dp"
-            android:layout_gravity="center"
-            android:src="@drawable/salida"
-            app:tint="@color/grayish"
-            app:maxImageSize="40dp"
-            app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
-            android:backgroundTint="@color/red_darker"
-            >
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
+            <TextView
+                android:id="@+id/texto_visita_express_o_personalizada_fin_visita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_visita_express"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/grandstander_mediana"
+                android:layout_weight="1.8"
+                android:layout_marginStart="20dp"
+                >
+            </TextView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/boton_salir"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCustomSize="55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/salida"
+                app:tint="@color/grayish"
+                app:maxImageSize="40dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Fab.Rounded"
+                android:backgroundTint="@color/red_darker"
+                >
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
