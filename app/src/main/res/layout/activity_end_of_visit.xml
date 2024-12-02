@@ -29,7 +29,6 @@
             android:textColor="@color/black"
             android:textSize="28sp"
             android:fontFamily="@font/grandstander_mediana"
-            android:layout_weight="0.1"
             android:layout_marginStart="20dp"
             />
         <androidx.appcompat.widget.LinearLayoutCompat
