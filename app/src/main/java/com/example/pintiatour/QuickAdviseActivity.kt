@@ -293,7 +293,7 @@ class QuickAdviseActivity : AppCompatActivity() {
         tamVisita += 2 + temasSeleccionadosCount
 
         // Ajustar tamPorGenero dentro de los límites
-        tamPorGenero = tamPorGenero.coerceIn(2, 4)
+        tamPorGenero = tamPorGenero.coerceIn(2, 5)
 
         // Recalcular tamVisita según tamPorGenero
         tamVisita = (tamPorGenero * temasSeleccionadosCount) + 2 + temasSeleccionadosCount
