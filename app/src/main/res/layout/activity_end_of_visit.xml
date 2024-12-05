@@ -142,7 +142,7 @@
 
                 <TextView
                     android:id="@+id/texto_contador_tiempo_fin_visita"
-                    android:layout_width="80dp"
+                    android:layout_width="83dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:text="32:51"

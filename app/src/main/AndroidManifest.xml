@@ -15,23 +15,23 @@
         <activity
             android:name=".EndOfVisitActivity"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".NextPointQuestionaryActivity"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".NextPointContentActivity"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".NextPointMapActivity"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".ShowInitialVisitPointActivity"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".CustomVisitActivity"
             android:exported="false"
@@ -39,7 +39,8 @@
         <activity
             android:name=".QuickAdviseActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor"/>
         <activity
             android:name=".ContactInfoActivity"
             android:exported="false"

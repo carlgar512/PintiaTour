@@ -182,7 +182,7 @@
 
                 <TextView
                     android:id="@+id/texto_contador_tiempo_visita_punto_siguiente_contenido"
-                    android:layout_width="80dp"
+                    android:layout_width="85dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
                     android:text="32:51"
@@ -190,7 +190,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:textSize="19sp"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="17dp"
                     android:fontFamily="@font/grandstander_mediana"
                     >
                 </TextView>

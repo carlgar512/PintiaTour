@@ -14,7 +14,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
 import com.google.android.material.imageview.ShapeableImageView
 
-
 class ContactInfoActivity : AppCompatActivity() {
 
     // Declaración de las variables para los elementos de la interfaz de usuario
