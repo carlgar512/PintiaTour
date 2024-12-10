@@ -344,7 +344,6 @@ class QuickAdviseActivity : AppCompatActivity() {
      * en caso de cambios rápidos. También inicia una acción específica después de un retraso de 1 segundo
      * si la orientación es horizontal.
      */
-
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
 

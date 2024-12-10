@@ -14,7 +14,8 @@ import com.bumptech.glide.Glide
 
 // Actividad que muestra una pantalla de carga con un GIF animado antes de navegar a la siguiente actividad
 class LoadingAppActivity : AppCompatActivity() {
-    private lateinit var mp: MediaPlayer
+
+    private lateinit var audioIntent : Intent
     /**
      * Esta actividad configura y muestra una pantalla de carga con un diseño "edge-to-edge",
      * aprovechando toda el área disponible de la pantalla. Inicializa los componentes gráficos
@@ -27,8 +28,10 @@ class LoadingAppActivity : AppCompatActivity() {
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mp= MediaPlayer.create(this,R.raw.initialsong)
-        mp.start()
+        audioIntent = Intent(this, AudioService::class.java)
+        audioIntent.putExtra("AUDIO_RES_ID", R.raw.initialsong) // Recurso de audio
+        audioIntent.putExtra("ACTION", "PLAY_BACKGROUND")
+        startService(audioIntent)
         enableEdgeToEdge() // Habilita un diseño "edge-to-edge" para aprovechar al máximo la pantalla
         setContentView(R.layout.activity_loadingapp) // Asigna el diseño XML a esta actividad
         initComponents() // Inicializa los componentes de la interfaz
@@ -42,13 +45,13 @@ class LoadingAppActivity : AppCompatActivity() {
     }
 
     /**
-     * Libera los recursos del MediaPlayer cuando la actividad es destruida.
-     * Este método se llama cuando la actividad está a punto de ser destruida, asegurándose de que
-     * los recursos del MediaPlayer sean liberados correctamente para evitar fugas de memoria.
+     * Reanuda la reproducción del audio cuando la actividad vuelve a primer plano.
+     * Verifica si el reproductor no está reproduciendo y lo inicia.
      */
-    override fun onDestroy() {
-        super.onDestroy()
-        mp.release() // Libera los recursos del MediaPlayer
+    override fun onResume() {
+        super.onResume()
+        audioIntent.putExtra("ACTION", "RESUME")
+        startService(audioIntent)
     }
 
     /**
@@ -58,10 +61,9 @@ class LoadingAppActivity : AppCompatActivity() {
      */
     override fun onPause() {
         super.onPause()
-        if (::mp.isInitialized && mp.isPlaying) {
-            mp.stop()      // Detiene la reproducción de audio
-            mp.release()   // Libera los recursos del MediaPlayer
-        }
+        // Enviar la señal para pausar la música
+        audioIntent.putExtra("ACTION", "PAUSE")
+        startService(audioIntent)
     }
 
     /**

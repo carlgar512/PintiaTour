@@ -62,8 +62,8 @@ class NextPointQuestionaryActivity : AppCompatActivity() {
     private var numeroPantallaContenidoActual: Int? = 0
     private var numPantallasContenidoTematica: Int? = 0
 
-    private lateinit var mp: MediaPlayer
-    private lateinit var mp1: MediaPlayer
+    private lateinit var audioIntent: Intent
+    private lateinit var audioIntent1: Intent
 
 
     /**
@@ -88,8 +88,13 @@ class NextPointQuestionaryActivity : AppCompatActivity() {
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mp = MediaPlayer.create(this,R.raw.clock)
-        mp.start()
+        audioIntent = Intent(this, AudioService::class.java)
+        audioIntent1 = Intent(this, AudioService::class.java)
+        audioIntent.putExtra("AUDIO_RES_ID", R.raw.clock) // Recurso de audio
+        audioIntent.putExtra("ACTION", "PLAY_BACKGROUND")// Indica que debe reproducirse en bucle
+        audioIntent.putExtra("IS_LOOPING", true)
+        startService(audioIntent)
+
         enableEdgeToEdge()
         setContentView(R.layout.activity_next_point_questionary)
         getSessionData()
@@ -107,46 +112,41 @@ class NextPointQuestionaryActivity : AppCompatActivity() {
     }
 
     /**
-     * Reanuda la reproducción del audio cuando la actividad vuelve a estar visible.
-     *
-     * Este método se ejecuta automáticamente cuando la actividad pasa al estado `Resumed`.
-     * Si el audio no está reproduciéndose, se inicia nuevamente. Esto asegura que el usuario
-     * pueda continuar escuchando el audio desde donde lo dejó al salir brevemente de la actividad.
-     */
-    override fun onResume() {
-        super.onResume()
-        // Reanuda la reproducción del audio al volver a la pantalla
-        if (!mp.isPlaying) {
-            mp.start()
-        }
-    }
-
-    /**
-     * Pausa la reproducción del audio y libera recursos temporalmente cuando la actividad deja de ser visible.
-     *
-     * Este método se ejecuta automáticamente cuando la actividad pasa al estado `Paused`.
-     * Si el `MediaPlayer` está inicializado y reproduciendo audio, se detiene la reproducción
-     * y se liberan los recursos asociados para optimizar el uso de memoria.
-     */
-    override fun onPause() {
-        super.onPause()
-        if (::mp.isInitialized && mp.isPlaying) {
-            mp.stop()       // Detiene la reproducción
-            mp.release()    // Libera los recursos del MediaPlayer
-        }
-    }
-
-    /**
-     * Libera definitivamente los recursos asociados al `MediaPlayer` al destruir la actividad.
-     *
-     * Este método se ejecuta automáticamente cuando la actividad pasa al estado `Destroyed`.
-     * Libera todos los recursos utilizados por el `MediaPlayer`, asegurando que no haya fugas de memoria
-     * ni uso innecesario de recursos del sistema después de que la actividad se cierre.
+     * Libera los recursos del MediaPlayer al destruir la actividad.
+     * Este método asegura que el MediaPlayer se libere correctamente cuando la actividad se destruye
+     * para evitar fugas de memoria.
      */
     override fun onDestroy() {
         super.onDestroy()
-        // Libera los recursos del MediaPlayer al cerrar la actividad
-        mp.release()
+        audioIntent.putExtra("ACTION", "STOP")
+        audioIntent1.putExtra("ACTION", "STOP")
+        startService(audioIntent)
+        startService(audioIntent1)
+    }
+
+    /**
+     * Detiene la reproducción del audio y libera los recursos del MediaPlayer al pausar la actividad.
+     * Este método asegura que el audio se detenga y se liberen los recursos utilizados por el MediaPlayer
+     * cuando la actividad pasa a segundo plano.
+     */
+    override fun onPause() {
+        super.onPause()
+        audioIntent.putExtra("ACTION", "PAUSE")
+        audioIntent1.putExtra("ACTION", "PAUSE")
+        startService(audioIntent)
+        startService(audioIntent1)
+    }
+
+    /**
+     * Reanuda la reproducción del audio cuando la actividad vuelve a primer plano.
+     * Verifica si el reproductor no está reproduciendo y lo inicia.
+     */
+    override fun onResume() {
+        super.onResume()
+        audioIntent.putExtra("ACTION", "RESUME")
+        audioIntent1.putExtra("ACTION", "RESUME")
+        startService(audioIntent)
+        startService(audioIntent1)
     }
 
     /**
@@ -270,12 +270,12 @@ class NextPointQuestionaryActivity : AppCompatActivity() {
             cardView.setOnClickListener {
                 val opcionElegida = index + 1
                 if (opcionElegida == respuestaCorrecta) {
-                    mp1 = MediaPlayer.create(this,R.raw.correct)
-                    mp1.start()
+                    audioIntent1.putExtra("AUDIO_RES_ID", R.raw.correct)
                 } else {
-                    mp1 = MediaPlayer.create(this,R.raw.error)
-                    mp1.start()
+                    audioIntent1.putExtra("AUDIO_RES_ID", R.raw.error)
                 }
+                audioIntent1.putExtra("ACTION", "PLAY_GUIDE")
+                startService(audioIntent1)
                 highlightGreenCardView(opciones[respuestaCorrecta - 1].first, opciones[respuestaCorrecta - 1].second)
                 val incorrectas = opciones.filterIndexed { i, _ -> i != respuestaCorrecta - 1 }
                 if (incorrectas.isNotEmpty()) {
@@ -288,7 +288,8 @@ class NextPointQuestionaryActivity : AppCompatActivity() {
 
         btnVolver.setOnClickListener {
             stopTimer()
-            mp.stop()
+            audioIntent.putExtra("ACTION", "STOP")
+            startService(audioIntent)
             posicionArrayPantallas = posicionArrayPantallas!! - 1
             var siguientePantalla = Intent(this, coleccionPantallas[posicionArrayPantallas as Int].activityClass)
             navigateToNextScreen(siguientePantalla)
@@ -296,7 +297,8 @@ class NextPointQuestionaryActivity : AppCompatActivity() {
 
         btnSiguiente.setOnClickListener {
             stopTimer()
-            mp.stop()
+            audioIntent.putExtra("ACTION", "STOP")
+            startService(audioIntent)
             posicionArrayPantallas = posicionArrayPantallas!! + 1
             var siguientePantalla = Intent(this, coleccionPantallas[posicionArrayPantallas as Int].activityClass)
             navigateToNextScreen(siguientePantalla)
@@ -311,7 +313,8 @@ class NextPointQuestionaryActivity : AppCompatActivity() {
         }
 
         btnSalir.setOnClickListener{
-            mp.stop() // Detiene la reproducción de audio
+            audioIntent.putExtra("ACTION", "STOP")
+            startService(audioIntent) // Detiene la reproducción de audio
             var siguientePantalla = Intent(this, SelectVisitActivity::class.java)
             navigateToNextScreen(siguientePantalla) // Finaliza l
         }

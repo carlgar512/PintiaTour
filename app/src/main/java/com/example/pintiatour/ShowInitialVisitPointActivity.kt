@@ -34,12 +34,11 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
     private var tiempoVisita: Long? = 3600
     private var temasSeleccionados = BooleanArray(5) { false }
     private var timerJob: Job? = null
-    private lateinit var mp: MediaPlayer
-    private lateinit var mp1: MediaPlayer
+    private lateinit var audioIntent: Intent
+    private lateinit var audioIntent1: Intent
     private var coleccionPantallas = mutableListOf<Pantalla>()
     private var posicionArrayPantallas: Int? = 0
     private var numPantallasContenidoTematica: Int? = 0
-
 
 
     /**
@@ -59,9 +58,12 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Crea y reproduce el MediaPlayer
-        mp1 = MediaPlayer.create(this, R.raw.flute)
-        mp1.start()
-        mp1.isLooping=true
+        audioIntent = Intent(this, AudioService::class.java)
+        audioIntent1 = Intent(this, AudioService::class.java)
+        audioIntent.putExtra("AUDIO_RES_ID", R.raw.flute) // Recurso de audio
+        audioIntent.putExtra("ACTION", "PLAY_BACKGROUND")// Indica que debe reproducirse en bucle
+        audioIntent.putExtra("IS_LOOPING", true)
+        startService(audioIntent)
         enableEdgeToEdge()
         setContentView(R.layout.activity_show_initial_visit_point)
         getSessionData()
@@ -83,8 +85,10 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
      */
     override fun onDestroy() {
         super.onDestroy()
-        mp.release()
-        mp1.release()
+        audioIntent.putExtra("ACTION", "STOP")
+        audioIntent1.putExtra("ACTION", "STOP")
+        startService(audioIntent)
+        startService(audioIntent1)
     }
 
     /**
@@ -94,11 +98,22 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
      */
     override fun onPause() {
         super.onPause()
-        if (::mp.isInitialized && mp.isPlaying) {
-            mp.stop()       // Detiene la reproducción
-            mp.release()    // Libera los recursos del MediaPlayer
-        }
-        mp1.release()
+        audioIntent.putExtra("ACTION", "PAUSE")
+        audioIntent1.putExtra("ACTION", "PAUSE")
+        startService(audioIntent)
+        startService(audioIntent1)
+    }
+
+    /**
+     * Reanuda la reproducción del audio cuando la actividad vuelve a primer plano.
+     * Verifica si el reproductor no está reproduciendo y lo inicia.
+     */
+    override fun onResume() {
+        super.onResume()
+        audioIntent.putExtra("ACTION", "RESUME")
+        audioIntent1.putExtra("ACTION", "RESUME")
+        startService(audioIntent)
+        startService(audioIntent1)
     }
 
     /**
@@ -169,30 +184,35 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
      */
     private fun initListeners() {
         btnVolver.setOnClickListener {
-            mp.stop()
-            mp1.stop()
-            mp1.release()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             val siguientePantalla = Intent(this, QuickAdviseActivity::class.java)
             navigateToNextScreen(siguientePantalla)
         }
 
         btnSiguiente.setOnClickListener {
             stopTimer()
-            mp.stop()
-            mp1.release()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             posicionArrayPantallas = posicionArrayPantallas!! + 1
             val siguientePantalla = Intent(this, coleccionPantallas[posicionArrayPantallas as Int].activityClass)
             navigateToNextScreen(siguientePantalla)
         }
 
         btnAudio.setOnClickListener{
-            mp1.setVolume(0.5f, 0.5f)
-            mp.start()
+            audioIntent1.putExtra("ACTION", "PLAY_GUIDE")
+            startService(audioIntent1)
         }
 
         btnSalir.setOnClickListener{
-            mp1.stop()
-            mp.stop() // Detiene la reproducción de audio
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             var siguientePantalla = Intent(this, SelectVisitActivity::class.java)
             navigateToNextScreen(siguientePantalla) // Finaliza l
         }
@@ -283,7 +303,7 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
                 } else {
                     getString(R.string.texto_visita_express)
                 }
-                mp = MediaPlayer.create(this, R.raw.inicioes)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.inicioes)
                 textoPuntoInicial.text = getString(R.string.texto_inicial_punto_inicial)
                 btnVolver.text = getString(R.string.texto_boton_regresar)
                 btnSiguiente.text = getString(R.string.texto_boton_siguiente)
@@ -294,7 +314,7 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
                 } else {
                     getString(R.string.texto_visita_express_eng)
                 }
-                mp = MediaPlayer.create(this, R.raw.inicioen)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.inicioen)
                 textoPuntoInicial.text = getString(R.string.texto_inicial_punto_inicial_eng)
                 btnVolver.text = getString(R.string.texto_boton_regresar_eng)
                 btnSiguiente.text = getString(R.string.texto_boton_siguiente_eng)
@@ -305,7 +325,7 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
                 } else {
                     getString(R.string.texto_visita_express_deu)
                 }
-                mp = MediaPlayer.create(this, R.raw.inicioal)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.inicioal)
                 textoPuntoInicial.text = getString(R.string.texto_inicial_punto_inicial_deu)
                 btnVolver.text = getString(R.string.texto_boton_regresar_deu)
                 btnSiguiente.text = getString(R.string.texto_boton_siguiente_deu)
@@ -316,15 +336,12 @@ class ShowInitialVisitPointActivity : AppCompatActivity() {
                 } else {
                     getString(R.string.texto_visita_express_fra)
                 }
-                mp = MediaPlayer.create(this, R.raw.iniciofr)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.iniciofr)
                 textoPuntoInicial.text = getString(R.string.texto_inicial_punto_inicial_fra)
                 btnVolver.text = getString(R.string.texto_boton_regresar_fra)
                 btnSiguiente.text = getString(R.string.texto_boton_siguiente_fra)
             }
         }
     }
-
-
-
 
 }

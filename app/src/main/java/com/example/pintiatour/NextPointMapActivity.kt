@@ -43,8 +43,8 @@ class NextPointMapActivity : AppCompatActivity() {
     private var posicionArrayPantallas: Int? = 0
     private var numPantallasContenidoTematica: Int? = 0
 
-    private lateinit var mp: MediaPlayer
-    private lateinit var mp1: MediaPlayer
+    private lateinit var audioIntent: Intent
+    private lateinit var audioIntent1: Intent
 
 
     /**
@@ -72,9 +72,12 @@ class NextPointMapActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Crea y reproduce el MediaPlayer
-        mp1 = MediaPlayer.create(this, R.raw.campana)
-        mp1.start()
+        audioIntent = Intent(this, AudioService::class.java)
+        audioIntent1 = Intent(this, AudioService::class.java)
+        audioIntent.putExtra("AUDIO_RES_ID", R.raw.campana) // Recurso de audio
+        audioIntent.putExtra("ACTION", "PLAY_BACKGROUND")// Indica que debe reproducirse en bucle
+        audioIntent.putExtra("IS_LOOPING", false)
+        startService(audioIntent)
         // Habilitar el modo edge-to-edge
         enableEdgeToEdge()
 
@@ -105,37 +108,41 @@ class NextPointMapActivity : AppCompatActivity() {
     }
 
     /**
-     * Se llama cuando la actividad está a punto de destruirse.
-     *
-     * Este método libera los recursos del `MediaPlayer` cuando la actividad se destruye, asegurándose
-     * de que no haya recursos del `MediaPlayer` siendo utilizados una vez que la actividad haya terminado.
+     * Libera los recursos del MediaPlayer al destruir la actividad.
+     * Este método asegura que el MediaPlayer se libere correctamente cuando la actividad se destruye
+     * para evitar fugas de memoria.
      */
     override fun onDestroy() {
         super.onDestroy()
-        // Libera los recursos del MediaPlayer al cerrar la actividad
-        mp.release()
-        mp1.release()
+        audioIntent.putExtra("ACTION", "STOP")
+        audioIntent1.putExtra("ACTION", "STOP")
+        startService(audioIntent)
+        startService(audioIntent1)
     }
 
     /**
-     * Se llama cuando la actividad pasa a un estado de pausa.
-     *
-     * Este método se asegura de que, si el `MediaPlayer` está activo y reproduciendo, se detenga y libere
-     * sus recursos antes de que la actividad sea puesta en pausa. Esto es útil para evitar que el
-     * `MediaPlayer` siga reproduciendo sonido o consuma recursos cuando la actividad no está en primer plano.
+     * Detiene la reproducción del audio y libera los recursos del MediaPlayer al pausar la actividad.
+     * Este método asegura que el audio se detenga y se liberen los recursos utilizados por el MediaPlayer
+     * cuando la actividad pasa a segundo plano.
      */
     override fun onPause() {
         super.onPause()
-        if (::mp.isInitialized && mp.isPlaying) {
-            mp.stop()       // Detiene la reproducción
-            mp.release()
-                            // Libera los recursos del MediaPlayer
-        }
-        if (::mp1.isInitialized && mp1.isPlaying) {
-            mp1.stop()       // Detiene la reproducción
-            mp1.release()
-            // Libera los recursos del MediaPlayer
-        }
+        audioIntent.putExtra("ACTION", "PAUSE")
+        audioIntent1.putExtra("ACTION", "PAUSE")
+        startService(audioIntent)
+        startService(audioIntent1)
+    }
+
+    /**
+     * Reanuda la reproducción del audio cuando la actividad vuelve a primer plano.
+     * Verifica si el reproductor no está reproduciendo y lo inicia.
+     */
+    override fun onResume() {
+        super.onResume()
+        audioIntent.putExtra("ACTION", "RESUME")
+        audioIntent1.putExtra("ACTION", "RESUME")
+        startService(audioIntent)
+        startService(audioIntent1)
     }
 
     /**
@@ -253,8 +260,10 @@ class NextPointMapActivity : AppCompatActivity() {
      */
     private fun initListeners() {
         btnVolver.setOnClickListener {
-            mp.stop()
-            mp1.stop()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             stopTimer()
             posicionArrayPantallas = posicionArrayPantallas!! - 1
             Log.i("posicionArr", posicionArrayPantallas.toString())
@@ -264,8 +273,10 @@ class NextPointMapActivity : AppCompatActivity() {
         }
 
         btnSiguiente.setOnClickListener {
-            mp1.stop()
-            mp.stop()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             stopTimer()
             posicionArrayPantallas = posicionArrayPantallas!! + 1
             val siguientePantalla = Intent(this, coleccionPantallas[posicionArrayPantallas as Int].activityClass)
@@ -273,19 +284,23 @@ class NextPointMapActivity : AppCompatActivity() {
         }
 
         imgPuntoSiguienteMapa.setOnClickListener{
-            mp.stop()
-            mp1.stop()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             openGoogleMaps()
         }
 
         btnAudio.setOnClickListener{
-            mp1.stop()
-            mp.start()
+            audioIntent1.putExtra("ACTION", "PLAY_GUIDE")
+            startService(audioIntent1)
         }
 
         btnSalir.setOnClickListener{
-            mp1.stop()
-            mp.stop() // Detiene la reproducción de audio
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             var siguientePantalla = Intent(this, SelectVisitActivity::class.java)
             navigateToNextScreen(siguientePantalla) // Finaliza l
         }
@@ -402,7 +417,8 @@ class NextPointMapActivity : AppCompatActivity() {
                 "textoDirijasePunto" to getString(R.string.texto_dirijase_punto_punto_siguiente_mapa),
                 "btnVolver" to getString(R.string.texto_boton_regresar),
                 "btnSiguiente" to getString(R.string.texto_boton_siguiente),
-                "mp" to MediaPlayer.create(this,R.raw.mapaes)
+                "mp" to R.raw.mapaes
+
             ),
             "eng" to mapOf(
                 "textoTipoVisitaExpress" to getString(R.string.texto_visita_express_eng),
@@ -410,7 +426,7 @@ class NextPointMapActivity : AppCompatActivity() {
                 "textoDirijasePunto" to getString(R.string.texto_dirijase_punto_punto_siguiente_mapa_eng),
                 "btnVolver" to getString(R.string.texto_boton_regresar_eng),
                 "btnSiguiente" to getString(R.string.texto_boton_siguiente_eng),
-                "mp" to MediaPlayer.create(this,R.raw.mapaen)
+                "mp" to R.raw.mapaen
             ),
             "deu" to mapOf(
                 "textoTipoVisitaExpress" to getString(R.string.texto_visita_express_deu),
@@ -418,7 +434,7 @@ class NextPointMapActivity : AppCompatActivity() {
                 "textoDirijasePunto" to getString(R.string.texto_dirijase_punto_punto_siguiente_mapa_deu),
                 "btnVolver" to getString(R.string.texto_boton_regresar_deu),
                 "btnSiguiente" to getString(R.string.texto_boton_siguiente_deu),
-                "mp" to MediaPlayer.create(this,R.raw.mapaal)
+                "mp" to R.raw.mapaal
             ),
             "fra" to mapOf(
                 "textoTipoVisitaExpress" to getString(R.string.texto_visita_express_fra),
@@ -426,7 +442,7 @@ class NextPointMapActivity : AppCompatActivity() {
                 "textoDirijasePunto" to getString(R.string.texto_dirijase_punto_punto_siguiente_mapa_fra),
                 "btnVolver" to getString(R.string.texto_boton_regresar_fra),
                 "btnSiguiente" to getString(R.string.texto_boton_siguiente_fra),
-                "mp" to MediaPlayer.create(this,R.raw.mapafr)
+                "mp" to R.raw.mapafr
             )
         )
         // Obtener el mapa de textos correspondientes al idioma seleccionado
@@ -443,7 +459,7 @@ class NextPointMapActivity : AppCompatActivity() {
         textoDirijasePunto.text = audioText["textoDirijasePunto"].toString()
         btnVolver.text = audioText["btnVolver"].toString()
         btnSiguiente.text = audioText["btnSiguiente"].toString()
-        mp= audioText["mp"] as MediaPlayer
+        audioIntent1.putExtra("AUDIO_RES_ID", audioText["mp"])
 
     }
 

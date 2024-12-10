@@ -47,8 +47,8 @@ class EndOfVisitActivity : AppCompatActivity() {
     private var posicionArrayPantallas: Int? = 0
     private var numPantallasContenidoTematica: Int? = 0
 
-    private lateinit var mp: MediaPlayer
-    private lateinit var mp1: MediaPlayer
+    private lateinit var audioIntent: Intent
+    private lateinit var audioIntent1: Intent
 
     /**
      * Método llamado al crear la actividad.
@@ -60,9 +60,12 @@ class EndOfVisitActivity : AppCompatActivity() {
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mp1 = MediaPlayer.create(this, R.raw.end1)
-        mp1.start()
-        mp1.isLooping=true
+        audioIntent = Intent(this, AudioService::class.java)
+        audioIntent1 = Intent(this, AudioService::class.java)
+        audioIntent.putExtra("AUDIO_RES_ID", R.raw.end1) // Recurso de audio
+        audioIntent.putExtra("ACTION", "PLAY_BACKGROUND")// Indica que debe reproducirse en bucle
+        audioIntent.putExtra("IS_LOOPING", true)
+        startService(audioIntent)
         enableEdgeToEdge() // Habilita un diseño "edge-to-edge" en la pantalla
         setContentView(R.layout.activity_end_of_visit) // Asigna el diseño de la actividad
         getSessionData() // Obtiene los datos de la sesión desde el Intent
@@ -80,25 +83,41 @@ class EndOfVisitActivity : AppCompatActivity() {
     }
 
     /**
-     * Libera los recursos del MediaPlayer cuando la actividad es destruida.
+     * Libera los recursos del MediaPlayer al destruir la actividad.
+     * Este método asegura que el MediaPlayer se libere correctamente cuando la actividad se destruye
+     * para evitar fugas de memoria.
      */
     override fun onDestroy() {
         super.onDestroy()
-        // Libera los recursos del MediaPlayer al cerrar la actividad
-        mp.release()
-        mp1.release()
+        audioIntent.putExtra("ACTION", "STOP")
+        audioIntent1.putExtra("ACTION", "STOP")
+        startService(audioIntent)
+        startService(audioIntent1)
     }
 
     /**
-     * Detiene la reproducción y libera los recursos del MediaPlayer cuando la actividad pasa a segundo plano.
+     * Detiene la reproducción del audio y libera los recursos del MediaPlayer al pausar la actividad.
+     * Este método asegura que el audio se detenga y se liberen los recursos utilizados por el MediaPlayer
+     * cuando la actividad pasa a segundo plano.
      */
     override fun onPause() {
         super.onPause()
-        if (::mp.isInitialized && mp.isPlaying) {
-            mp.stop()       // Detiene la reproducción
-            mp.release()    // Libera los recursos del MediaPlayer
-        }
-        mp1.release()
+        audioIntent.putExtra("ACTION", "PAUSE")
+        audioIntent1.putExtra("ACTION", "PAUSE")
+        startService(audioIntent)
+        startService(audioIntent1)
+    }
+
+    /**
+     * Reanuda la reproducción del audio cuando la actividad vuelve a primer plano.
+     * Verifica si el reproductor no está reproduciendo y lo inicia.
+     */
+    override fun onResume() {
+        super.onResume()
+        audioIntent.putExtra("ACTION", "RESUME")
+        audioIntent1.putExtra("ACTION", "RESUME")
+        startService(audioIntent)
+        startService(audioIntent1)
     }
 
     /**
@@ -165,29 +184,37 @@ class EndOfVisitActivity : AppCompatActivity() {
      */
     private fun initListeners() {
         btnVolver.setOnClickListener {
-            mp1.stop()
-            mp.stop() // Detiene la reproducción de audio
-            stopTimer() // Detiene el temporizador
+            stopTimer()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             posicionArrayPantallas = posicionArrayPantallas!! - 1
             var siguientePantalla = Intent(this, coleccionPantallas[posicionArrayPantallas as Int].activityClass)
             navigateToNextScreen(siguientePantalla) // Navega al cuestionario anterior
         }
 
         btnFin.setOnClickListener {
-            mp1.stop()
-            mp.stop() // Detiene la reproducción de audio
+            stopTimer()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1)
             var siguientePantalla = Intent(this, SelectVisitActivity::class.java)
             navigateToNextScreen(siguientePantalla) // Finaliza la visita y vuelve a la selección de visita
         }
 
         btnAudio.setOnClickListener {
-            mp1.setVolume(0.5f, 0.5f)
-            mp.start() // Inicia o reanuda la reproducción de audio
+            audioIntent1.putExtra("ACTION", "PLAY_GUIDE")
+            startService(audioIntent1) // Inicia o reanuda la reproducción de audio
         }
 
         btnSalir.setOnClickListener{
-            mp1.stop()
-            mp.stop() // Detiene la reproducción de audio
+            stopTimer()
+            audioIntent.putExtra("ACTION", "STOP")
+            audioIntent1.putExtra("ACTION", "STOP")
+            startService(audioIntent)
+            startService(audioIntent1) // Detiene la reproducción de audio
             var siguientePantalla = Intent(this, SelectVisitActivity::class.java)
             navigateToNextScreen(siguientePantalla) // Finaliza l
         }
@@ -298,7 +325,7 @@ class EndOfVisitActivity : AppCompatActivity() {
                 textoFinVisita.text = getString(R.string.texto_fin_visita)
                 btnVolver.text = getString(R.string.texto_boton_regresar)
                 btnFin.text = getString(R.string.texto_boton_fin_visita)
-                mp= MediaPlayer.create(this,R.raw.endes)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.endes)
             }
             "eng" -> { // Inglés
                 textoTipoVisita.text = getString(if (intent.extras?.getString("visitaPersonalizada") != null)
@@ -307,7 +334,7 @@ class EndOfVisitActivity : AppCompatActivity() {
                 textoFinVisita.text = getString(R.string.texto_fin_visita_eng)
                 btnVolver.text = getString(R.string.texto_boton_regresar_eng)
                 btnFin.text = getString(R.string.texto_boton_fin_visita_eng)
-                mp= MediaPlayer.create(this,R.raw.enden)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.enden)
             }
             "deu" -> { // Alemán
                 textoTipoVisita.text = getString(if (intent.extras?.getString("visitaPersonalizada") != null)
@@ -316,7 +343,7 @@ class EndOfVisitActivity : AppCompatActivity() {
                 textoFinVisita.text = getString(R.string.texto_fin_visita_deu)
                 btnVolver.text = getString(R.string.texto_boton_regresar_deu)
                 btnFin.text = getString(R.string.texto_boton_fin_visita_deu)
-                mp= MediaPlayer.create(this,R.raw.endal)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.endal)
             }
             "fra" -> { // Francés
                 textoTipoVisita.text = getString(if (intent.extras?.getString("visitaPersonalizada") != null)
@@ -325,7 +352,7 @@ class EndOfVisitActivity : AppCompatActivity() {
                 textoFinVisita.text = getString(R.string.texto_fin_visita_fra)
                 btnVolver.text = getString(R.string.texto_boton_regresar_fra)
                 btnFin.text = getString(R.string.texto_boton_fin_visita_fra)
-                mp= MediaPlayer.create(this,R.raw.endfr)
+                audioIntent1.putExtra("AUDIO_RES_ID", R.raw.endfr)
             }
         }
     }
